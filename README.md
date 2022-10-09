@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+git status && git add . && git commit -m gh-pages && git push origin main
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
