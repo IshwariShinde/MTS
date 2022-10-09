@@ -4,8 +4,8 @@
 }
 .slider{
     display: none;
-    background-color: #22210f;
-    /* background-color: #ff333c  ; */
+    /* background-color: #22210f; */
+    background-color: #ff333c  ;
     /* opacity: 0.6; */
     /* position: relative; */
     height: 580px;
