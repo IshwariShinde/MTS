@@ -1,0 +1,86 @@
+.getWorkDone{
+ 
+   background-color: #313131 ;
+  
+}
+.getWorkDone_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff333c ;
+    color: white;
+}
+.gwd_left >h1{
+    font-size: 45px;
+}
+
+.gwdForm_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gwdForm_row > input{
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    margin-bottom:  10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 35px;
+    background-color: #f2f2f2;
+}
+#subject{
+width: 650px;
+}
+
+.gwdForm_row > textarea{
+    outline: none;
+    height: 100px;
+    resize: none;
+    width: 650px;
+    padding: 10px;
+    margin-bottom:  20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 35px;
+    background-color: #f2f2f2;
+}
+.gwdForm_btn{
+    text-align: center;
+}
+.gwdForm_btn >.gwdForm_btnInner{
+    border: none;
+    padding: 8px 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff3738;
+
+   
+
+}
+.getWorkDone_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getWorkDone_formInner{
+    box-shadow: 0 0 8px #dcdcdc;
+    padding: 30px 50px;
+    margin-top: 20px;
+    margin-bottom:20px ;
+
+}
+#work_file{
+    background-color: #f2f2f2;
+    margin-right: 35px;
+    padding: 10px;
+    margin-bottom:  20px;
+    border-radius: 5px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

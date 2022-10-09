@@ -1,0 +1,29 @@
+.photoComponent{
+   position: relative;
+   height: 330px;
+    width: 450px;
+    margin: 10px 10px;
+  
+}
+.photoImg_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.photImg_info{
+    position: absolute;
+  background-color: #ff333c;
+    bottom: 0;
+    left: 5%;
+    display: none;
+}
+.photoComponent:hover{
+   
+    cursor: pointer;
+
+}
+.photoComponent:hover > .photImg_info{
+    display: block;
+}

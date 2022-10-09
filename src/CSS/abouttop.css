@@ -1,0 +1,8 @@
+.about_top{
+    height: 80vh;
+    background-image: url("https://ishwarishinde.github.io/cdn/dummy1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+opacity: 0.3;
+    /* overflow: hidden; */
+}

@@ -1,0 +1,10 @@
+.tagline{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+}
+.tagline >p{
+    font-size: 25px;
+}

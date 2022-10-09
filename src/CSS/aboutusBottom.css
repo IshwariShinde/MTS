@@ -1,0 +1,12 @@
+.aboutUsBottom{
+    padding: 10px 80px;
+}
+.aboutus_row{
+    display: flex;
+    align-items: center;
+}
+.aboutusIcon{
+    font-size: 40px;
+    margin-right: 20px;
+    color: #ff3738;
+}

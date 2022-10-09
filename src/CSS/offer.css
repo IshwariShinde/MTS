@@ -1,0 +1,41 @@
+.offer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.offer_left{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.offer_left > img{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.offer_right{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer_right_inner{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.offer_right > .offer_right_inner > h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.20;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    color: #f70303;
+
+}
+
+.offer_right > .offer_right_inner > p{
+    font-size: 24px; 
+    line-height: 28px; 
+    font-weight: 600;
+}

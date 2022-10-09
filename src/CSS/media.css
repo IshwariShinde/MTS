@@ -1,0 +1,35 @@
+.media{
+    text-align: center;
+  
+    margin-top: -20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.media_heading{
+    padding: 10px;
+    font-size: 20px;
+}
+.media_img{
+    width: 100px;
+padding: 20px;
+}
+.media_mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.media_content{
+    background-color: #fff;
+    padding: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px #565353;
+}

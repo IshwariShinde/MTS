@@ -1,0 +1,26 @@
+.valueComponent{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #c30b0b,0 0 5px #c30b0b,0 0 4px #c30b0b;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 10px 20px;
+}
+.value_icon{
+    height: 24px;
+    width: 24px;
+    color: #ff3f3f;
+    font-weight: bold;
+    padding-right: 10px;
+}
+/* .value_icon:nth-child(1){
+    color: #ffbb2c;
+}
+.value_icon:nth-child(2){
+    color: rgb(67, 15, 198);
+   
+} */
+.valueComponent > p{
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.contactAdress{
+    padding: 0px 30px;
+    padding-bottom: 30px;
+}
+.contactAdress_heading{
+    text-align: center;
+}
+.contactAdress_inner{
+    display: flex;
+}
+.contact_left{
+    flex: 0.3;
+    background-color: #a09494;
+   padding-left: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contact_right{
+    flex: 0.7;
+    background-color: #ff3738;
+    padding: 0;
+    
+}

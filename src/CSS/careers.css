@@ -1,0 +1,57 @@
+.careers{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #f2f2f2;
+}
+.careers_inner{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+.openings_inner{
+    margin: 10px;
+}
+.openings{
+    flex: 0.7;
+    text-align: left;
+}
+.resume_form_inner{
+    background-color: #ff3738;
+    padding: 5px 10px;
+    padding-top: 10px;
+    /* box-shadow: 0 0 8px #111; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.resume_form{
+    flex: 0.3;
+    /* border: 2px solid black; */
+    padding: 5px;
+    
+}
+
+.resume_form_input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom:  20px;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+   
+}
+
+.resume_btn_inner{
+    border: none;
+    padding: 8px 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}

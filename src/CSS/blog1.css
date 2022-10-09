@@ -1,0 +1,37 @@
+.blog1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 30px;
+}
+.blogContainer_imgInner{
+    width:800px;
+    height: 300px;
+}
+.blogContainer_content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blogContainer_blogInfo{
+    display: flex;
+
+}
+.blogContainer_bloggerInfo{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+.blogContainer_blogDate{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: grey;
+}

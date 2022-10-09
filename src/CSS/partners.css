@@ -1,0 +1,32 @@
+.partners{
+    margin-top: -20px;
+    text-align: center;
+    
+}
+.partners_heading {
+    padding: 10px;
+    font-size: 20px;
+}
+.partners_mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partner_content{
+    background-color: #fff;
+    padding: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px #565353;
+}
+.partners_img{
+    width: 100px;
+    padding: 20px;
+}
+

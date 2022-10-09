@@ -1,0 +1,62 @@
+.footer{
+    background: #1e1e1e;
+    color: white;
+}
+.footer-nav-items > li{
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: rgba(255,255,255,.6);
+    /* font-weight: bold; */
+    font-size: 14px;
+}
+.footer-nav-items > li:hover{
+    color: #fff;
+}
+.content_above{
+    display: flex;
+    justify-content: space-between;
+}
+.company_info{
+    color: rgba(255,255,255,.6);
+    font-size: 14px;
+    padding: 10px 0px 10px 30px;
+}
+.newsletter{
+    padding-right: 20px;
+}
+.newsletter > p{
+    color: rgba(255,255,255,.6);
+}
+.footer_email{
+    color: #ff3738;
+    cursor: pointer;
+}
+.content_below{
+    background-color: #111;
+    text-align: center;
+}
+.social_Links{
+ font-size: larger;
+ margin-bottom: 5px;
+    
+}
+.social_Links > a{
+     color: #fff;
+     text-decoration: none;
+}
+.contact_icon{
+    font-size: 20px;
+    margin-right: 15px;
+    background-color: rgb(41, 39, 39);
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+.contact_icon:hover{
+    cursor: pointer;
+    color: #ff3738;
+    transform: scale(1.1);
+    box-shadow: 0 0 4px #ff3738 ,0 0 5px #ff3738,0 0 4px #ff3738;
+}

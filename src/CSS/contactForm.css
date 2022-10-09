@@ -1,0 +1,49 @@
+.contactForm{
+  height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_inner{
+    background-color: #ff3738;
+   
+  
+    padding: 0px 180px;
+    border-radius: 20px;
+}
+.contact_inner>h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.20;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    
+}
+.form_input{
+    width: 500px;
+    padding: 10px;
+    margin-bottom:  20px;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    /* background: none; */
+}
+#message{
+    height: 100px;
+    resize: none;
+}
+.submit_btn{
+    border: none;
+    padding: 8px 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    /* background: linear-gradient(to right, #ff3738,#fff); */
+    
+}

@@ -1,0 +1,11 @@
+.whyJoinUs{
+    text-align: center;
+}
+.whyJoinUs >h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.20;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    color: #f70303;
+}
