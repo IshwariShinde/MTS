@@ -15,8 +15,8 @@
     
 }
 .abt_heading_container{
-    /* background-color: #ff333c; */
-    background-color: #25152e;
+    background-color: #ff333c;
+    /* background-color: #25152e; */
     color: white;
     display: flex;
     position: absolute;

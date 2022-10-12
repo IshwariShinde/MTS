@@ -13,7 +13,7 @@ const WhatWeDo = () => {
         </div>
         <div className='whatwedo_right'>
         <div className='whatwedo_right_inner'>
-            <h1>What We DO</h1>
+            <h1>What We Do</h1>
             <div className='whatwedo_right_inner_content'>
             <p>Our transparent and economical approach that uses the right resources at the right time has enabled us to provide rapid and cost-effective solutions. We can help you with product and business strategy, infrastructure analysis, IT architecture, UX design, digital marketing, content creation, and marketing or we can just tap into our resources to provide you with what you need.</p></div>
             </div>
