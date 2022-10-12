@@ -6,14 +6,16 @@ const Offer = () => {
   return (
     <div className='offer'>
         <div className='offer_left'>
-        <img src="https://ishwarishinde.github.io/cdn/purpose.jpg" alt='purpose' className="purpose_image_resize"/>
+        <div className='offer_left_inner'>
+            <h1>What we offer?</h1>
+            <div className='offer_left_inner_content'>
+            <p>Our services include Project Management - Execution - Completion / Management Services / Outsourcing & Cloud based Solutions / Provisioning Software & Database Security/ Content Moderation & Auditing Services/ Software Development/ IT Training & Skills Development.</p></div>
+            </div>
+      
            
         </div>
         <div className='offer_right'>
-        <div className='offer_right_inner'>
-            <h1>What we offer?</h1>
-            <p>To Deliver High End Technology - Enabled Services and Solutions to Clients across the globe. We aims to refine the Freshers into a highly experienced IT Professional through Quality Training and Skills upgradation.</p>
-            </div>
+        <img src="https://ishwarishinde.github.io/cdn/purpose.jpg" alt='purpose' className="offer_image_resize"/>
             
         </div>
     </div>

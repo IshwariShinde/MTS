@@ -1,0 +1,54 @@
+.whatwedo{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin:10px 50px;
+    font-family: 'Playfair Display', serif;
+}
+.whatwedo_left{
+    /* flex: 0.5; */
+    position: relative;
+    width: 600px;
+    height: 400px;
+    /* z-index: -1; */
+}
+.wewedo_left_inner{
+    background:url("https://ishwarishinde.github.io/cdn/dummy2.jpg")no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.whatwedo_img{
+    width: 563px;
+}
+.whatwedo_right{
+    /* flex: 0.5; */
+    /* right: 0; */
+}
+.whatwedo_right > .whatwedo_right_inner > h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.20;
+    letter-spacing: 0;
+    /* margin-bottom: 1.5rem; */
+    color: #313131;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+}
+.whatwedo_right_inner_content{
+
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px 50px;
+    background-color: #25215e;
+    color: white;
+    z-index: 10000;
+    margin-left: -60px;
+    font-size: 24px; 
+    line-height: 28px;
+}

@@ -5,8 +5,9 @@ const ABoutTop = () => {
   return (
     <div className='about_top'>
         <div className='abt_heading_container'>
-            <p>WHO WE ARE</p>
+            <p>About Us</p>
         </div>
+        
     </div>
   )
 }
