@@ -1,12 +1,9 @@
 .aboutUsBottom{
     padding: 10px 80px;
+  
 }
-.aboutus_row{
+.abt_bottom_content{
     display: flex;
-    align-items: center;
-}
-.aboutusIcon{
-    font-size: 40px;
-    margin-right: 20px;
-    color: #ff3738;
+    justify-content: space-between;
+    margin: 50px 0px;
 }
