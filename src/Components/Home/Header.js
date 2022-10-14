@@ -14,16 +14,27 @@ const Header = () => {
           <div className='aboutDropdown'>
             <li><NavLink to={'/about'} className="linkStyle" >ABOUT US</NavLink></li>
             <div className='about_dropdown_content'>
-              <li><NavLink to={'/whoweare'} className="linkStyle">whoweare</NavLink></li>
-              <li><NavLink to={'/missionvision'} className="linkStyle">Our Mission & Vision</NavLink></li>
-              <li><NavLink to={'/ourteam'} className="linkStyle">Our Team</NavLink></li>
-              <li><NavLink to={'/whyjoinus'} className="linkStyle">Why Join Us</NavLink></li>
-              <li><NavLink to={'/value'} className="linkStyle">Our Core Values</NavLink></li>
+              <li><NavLink to={'/whoweare'} className="linkStyle">Who We Are</NavLink></li>
+              {/* <li><NavLink to={'/missionvision'} className="linkStyle">Our Mission & Vision</NavLink></li> */}
+              {/* <li><NavLink to={'/ourteam'} className="linkStyle">Our Team</NavLink></li> */}
+              {/* <li><NavLink to={'/whyjoinus'} className="linkStyle">Why Join Us</NavLink></li> */}
+              {/* <li><NavLink to={'/value'} className="linkStyle">Our Core Values</NavLink></li> */}
+              <li><NavLink to={'/story'} className="linkStyle">Our Story</NavLink></li>
 
             </div>
           </div>
+          <div className='serviceDropdown'>
 
           <li><NavLink to={'/services'} className="linkStyle">SERVICES</NavLink></li>
+          <div className='service_dropdown_content'>
+          <li><NavLink to={'/customsoftware'} className="linkStyle" >Custom Software</NavLink></li>
+          <li><NavLink to={'/webdevelopment'} className="linkStyle" >Web Development</NavLink></li>
+          <li><NavLink to={'/appdevelopment'} className="linkStyle" >Mobile App Development</NavLink></li>
+          <li><NavLink to={'/videoediting'} className="linkStyle" >Video Editing</NavLink></li>
+          <li><NavLink to={'/graphicdesign'} className="linkStyle" >Graphic Designing</NavLink></li>
+          <li><NavLink to={'/digitalmarketing'} className="linkStyle" >Digital Marketing</NavLink></li>
+          </div>
+          </div>
           <li><NavLink to={'/industries'} className="linkStyle">INDUSTRIES</NavLink></li>
           <li><NavLink to={'/products'} className="linkStyle">PRODUCTS</NavLink></li>
           <div className='galleryDropdown'>

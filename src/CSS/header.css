@@ -80,6 +80,38 @@
 .aboutDropdown:hover > .about_dropdown_content{
     display: block;
 }
+.serviceDropdown > li{
+    list-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+
+}
+.serviceDropdown >li:hover{
+    color: #ff3738;
+}
+.service_dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.service_dropdown_content >li{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.service_dropdown_content >li:hover{
+    background-color: #ddd;
+}
+.serviceDropdown:hover > .service_dropdown_content{
+    display: block;
+}
 
 .galleryDropdown > li{
     list-style: none;

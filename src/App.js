@@ -23,6 +23,7 @@ import Blog4 from './Components/Blogs/Blog4'
 import Blog5 from './Components/Blogs/Blog5'
 import Blog6 from './Components/Blogs/Blog6'
 import Blog7 from './Components/Blogs/Blog7'
+import CustomSoftware from './Components/Services/CustomSoftware'
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const App = () => {
         <Route path='/whyjoinus' element={<WhyJoinUs/>} />
         <Route path='/value' element={<Value />} />
        
-        
+        <Route path='/customsoftware' element={<CustomSoftware />} />
         
         
         <Route path='/photos' element={<Photos />} />
