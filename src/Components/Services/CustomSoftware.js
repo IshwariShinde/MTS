@@ -41,7 +41,7 @@ const CustomSoftware = () => {
             <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p>
           </div>
           <div className='custom_discovery_right'>
-            {/* <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' /> */}
+            <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' />
 
 
           </div>
