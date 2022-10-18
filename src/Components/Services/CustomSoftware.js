@@ -12,33 +12,33 @@ const CustomSoftware = () => {
           </div>
         </div>
         <div className='customsoftware_mid'>
-          <div className='customsoftware_mid_left'>
-          <h2>How we processed Custom Software Development</h2>
+        
+          
         <p>Offering the full gamut of software development from design to support services. Streamlining a complex process that requires a concerted effort between the developers and clients. We build a simple yet a powerful, scalable, and secure customized software that adds value to your business. </p>
-          </div>
-          <div className='customsoftware_mid_right'>
-            <div className='custom_line'></div>
-            {/* <div className='custom_line2'></div> */}
-          </div>
+          
+            
           
         </div>
         <div className='customsoftware_approach'>
-          <div className='customsoftware_approach_left'>
-            {/* <img className='customsoftware_img' src='https://ishwarishinde.github.io/cdn/dummy5.jpg' alt='swimg'/> */}
-          </div>
-          <div className='customsoftware_approach_right'>
-            <div className='customsoftware_approach_right_inner'>
+         
+            <div className='customsoftware_approach_inner'>
               <h1>The Approach</h1>
-              <div className='customsoftware_approach_right_inner_content'>
+              <div className='customsoftware_approach_inner_content'>
               <p>Open, transparent communication at every stage, for the success of the project (or lack thereof) completely depends on how well we understand the requirement, complexity, and the solution type that would be cost effective and enhanced over time for our clients.</p>
-              </div>
+              
             </div>
           </div>
         </div>
         <div className='custom_discovery'>
           <div className='custom_discovery_left'>
             <h1>Discovery</h1>
-            <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p>
+            <div className='custom_discovery_left_inner'>
+            <p className='discovery1'>Survey your target customers and understand their needs</p>
+            <p className='discovery2'>In-depth analysis of your target audience</p>
+            <p className='discovery3'>Good understanding of what features need to be included in your software</p>
+            <p className='discovery4'>Feasibility study, market research and competitive analysis with the help of our BA and R&D experts.</p>
+            <p className='discovery5'>Deciding the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals </p></div>
+            {/* <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p> */}
           </div>
           <div className='custom_discovery_right'>
             <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' />
@@ -74,24 +74,9 @@ const CustomSoftware = () => {
         
 
         <div className='custom_methodology'>
-          <h1>To serve you the best, we breakaway from</h1>
+          <h1>To Serve You The Best, We Breakaway From</h1>
           <div className='custom_methodology_inner'>
-            <div className='custom_methodology_inner_content'>
-              <h5>Agile Methodology</h5>
-              <p>Using the Agile Methodology, a flexible and efficient way to build software products. </p>
-            </div>
-            <div className='custom_methodology_inner_content'>
-              <h5>Srcum Consulting</h5>
-              <p> With Scrum Consulting, you can learn about your product in every sprint and get the most trusted framework of Agile. </p>
-            </div>
-            <div className='custom_methodology_inner_content'>
-              <h5>Maintenance & support</h5>
-              <p>From development to maintenance and post-delivery support, we'll provide you with an end-to-end solution. </p>
-            </div>
-            <div className='custom_methodology_inner_content'>
-              <h5>Security</h5>
-              <p> Your product's security is our top priority - we'll make sure it's backed with the right security protocols. </p>
-            </div>
+            <p>Cookie-cutter approach and create custom strategies that delivers results that we can be proud of. Using the <b>Agile Methodology</b>, a flexible and efficient way to build software products. With <b>Scrum Consulting</b>, you can learn about your product in every sprint and get the most trusted framework of Agile. From <b>development to maintenance and post-delivery support</b>, we'll provide you with an end-to-end solution. Your <b>product's security </b>is our top priority - we'll make sure it's backed with the right security protocols.</p>
           </div>
 
         </div>
