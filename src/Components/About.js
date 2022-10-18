@@ -9,6 +9,8 @@ import WhoWeAre from './About/WhoWeAre'
 import WhatWeDo from './About/WhatWeDo'
 import AboutUsTagline from './About/AboutUsTagline'
 
+import ValueComponent from './About/ValueComponent'
+
 
 const About = () => {
   return (
@@ -19,6 +21,7 @@ const About = () => {
         <Purpose />
         <Offer />
         <WhatWeDo />
+        <ValueComponent />
         <AboutUsBottom />
         
     </div>

@@ -12,7 +12,6 @@ import Blog from './Components/Contact/Blog'
 import Feedback from './Components/Contact/Feedback'
 import MissonVision from './Components/About/MissonVision'
 import WhyJoinUs from './Components/About/WhyJoinUs'
-import Value from './Components/About/Value'
 import Team from './Components/About/Team'
 import MtiansExperience from './Components/Contact/MtiansExperience'
 import GetWorkDone from './Components/Home/GetWorkDone'
@@ -37,7 +36,7 @@ const App = () => {
         <Route path='/ourteam' element={ <Team />} />
         <Route path='/missionvision' element={<MissonVision />} />
         <Route path='/whyjoinus' element={<WhyJoinUs/>} />
-        <Route path='/value' element={<Value />} />
+      
        
         <Route path='/customsoftware' element={<CustomSoftware />} />
         

@@ -1,26 +1,106 @@
 .valueComponent{
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 4px #c30b0b,0 0 5px #c30b0b,0 0 4px #c30b0b;
+   padding-left: 40px;
+   padding-right: 40px;
     display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.valueComponent >h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.20;
+    letter-spacing: 0;
+    /* margin-bottom: 1.5rem; */
+    color: #313131;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.valueComponent_alignment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px 15px;
-    margin: 10px 20px;
 }
-.value_icon{
-    height: 24px;
-    width: 24px;
-    color: #ff3f3f;
-    font-weight: bold;
-    padding-right: 10px;
-}
-/* .value_icon:nth-child(1){
-    color: #ffbb2c;
-}
-.value_icon:nth-child(2){
-    color: rgb(67, 15, 198);
+.flip {
+    position: relative;
    
-} */
-.valueComponent > p{
-    font-weight: bold;
+}
+.front{
+    padding-top: 5px;
+}
+.front>h1{
+    font-size:25px;
+ 
+    text-align: center;
+    color: white;
+}
+.front,.back{
+        display: block;
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: .5s;
+        transition-property: transform, opacity;
+    }
+    .front {
+        transform: rotateY(0deg);
+    }
+    .back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+    .flip:hover > .front {
+       
+            transform: rotateY(180deg);}
+       
+      .flip:hover  >.back {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    
+    .flip-vertical > .back {
+            transform: rotateX(-180deg);
+        }
+        .flip-vertical:hover >.front {
+                transform: rotateX(180deg);
+            }
+            .flip-vertical:hover   >.back {
+                transform: rotateX(0deg);
+            }
+        
+
+/* custom */
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 300px;}
+    .flip >.back {
+      display: block;
+      color: white;
+      width: inherit;
+      background-size: cover!important;
+      background-position: center!important;
+      height: 220px;
+      padding: 1em 2em;
+      background: #313131;
+      border-radius: 10px;}
+     .flip>.back> p {
+        font-size: 0.9125rem;
+        line-height: 160%;
+        color: #999;
+      }
+    
+
+.text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+.belief_img{
+    width: 400px;
+    height: 200px;
 }
