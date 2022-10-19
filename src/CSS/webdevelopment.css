@@ -1,0 +1,67 @@
+.WebDevelopment{
+    font-family: 'Playfair Display', serif;
+}
+.webdev_top::before{
+content: "";
+background:url("https://ishwarishinde.github.io/cdn/dummy8.jpg") center/cover;
+position: absolute;
+height: 90%;
+width: 100%;
+top: 0;
+left: 0;
+z-index: -1;
+
+    
+}
+.webdev_top{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+.webdev_heading_container::before {
+    content: '';
+    /* background-color: #ff333c; */
+    background-color: #525050;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    transform: scaleX(1.5);
+    opacity: 0.39;
+}
+.webdev_heading_container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+}
+.web_heading{
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.web_description{
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: -35px;
+    letter-spacing: 2px;
+
+}
+.webdev_tagline{
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #313131;
+    background-color:#f2f2f2;
+    padding: 30px 50px;
+    text-align: justify;
+}
+.webdev_tagline > p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.63;
+}

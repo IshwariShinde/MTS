@@ -6,12 +6,12 @@ const CustomSoftware = () => {
   return (
     <div className='customsoftware'>
         <div className='customsoftware_top'>
-          <div className='customsoftware_heading_container'>
-            <p className='custom_heading'>Custom Software</p>
-            <p className='custom_description'>Customized software that we create lets you stand out from the crowd. </p>
+          <div className='customsoftware_heading_container '>
+            <p className='custom_heading animate__animated  animate__fadeInUp'>Custom Software</p>
+            <p className='custom_description animate__animated  animate__fadeInUp'>Customized software that we create lets you stand out from the crowd. </p>
           </div>
         </div>
-        <div className='customsoftware_mid'>
+        <div className='customsoftware_mid ' >
         
           
         <p>Offering the full gamut of software development from design to support services. Streamlining a complex process that requires a concerted effort between the developers and clients. We build a simple yet a powerful, scalable, and secure customized software that adds value to your business. </p>
@@ -19,9 +19,9 @@ const CustomSoftware = () => {
             
           
         </div>
-        <div className='customsoftware_approach'>
+        <div className='customsoftware_approach' data-aos="fade-in-up">
          
-            <div className='customsoftware_approach_inner'>
+            <div className='customsoftware_approach_inner ' >
               <h1>The Approach</h1>
               <div className='customsoftware_approach_inner_content'>
               <p>Open, transparent communication at every stage, for the success of the project (or lack thereof) completely depends on how well we understand the requirement, complexity, and the solution type that would be cost effective and enhanced over time for our clients.</p>
@@ -30,7 +30,7 @@ const CustomSoftware = () => {
           </div>
         </div>
         <div className='custom_discovery'>
-          <div className='custom_discovery_left'>
+          <div className='custom_discovery_left' data-aos="fade-right">
             <h1>Discovery</h1>
             <div className='custom_discovery_left_inner'>
             <p className='discovery1'>Survey your target customers and understand their needs</p>
@@ -40,23 +40,23 @@ const CustomSoftware = () => {
             <p className='discovery5'>Deciding the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals </p></div>
             {/* <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p> */}
           </div>
-          <div className='custom_discovery_right'>
-            <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' />
+          <div className='custom_discovery_right' >
+            <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' data-aos="fade-left" />
 
 
           </div>
         </div>
         <div className='custom_user_journey'>
-          <div className='custom_user_journey_left'>
-            
+          <div className='custom_user_journey_left' data-aos="fade-up-right">
+          <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img'  />
           </div>
-          <div className='custom_user_journey_right'>
+          <div className='custom_user_journey_right' data-aos="fade-up-left">
             <h1>User Journey</h1>
             <p>Developing software can be difficult to do if you don't have a clear plan of what you want your users to experience when using it. That's why we believe that the best way to go about developing software is by first creating a user journey map. This will help show and clarify the steps that users will take when using the software and what tasks they need to complete, as well as any problems they may face along the way. By having this user journey already mapped out, it'll be easier to optimize all the steps in the process so that users can easily accomplish their goal without feeling lost or confused. User journey mapping is an essential tool for any product or website that wants to ensure their users have the best experience possible.</p>
           </div>
         </div>
 
-        <div className='custom_dev_test_deploy'>
+        <div className='custom_dev_test_deploy' data-aos="zoom-in">
           <div className='custom_dev_test_deploy_inner'>
           <h1>Development</h1>
             <p>After we've determined how the user would ideally interact with the software, we begin the development process. Our custom software development services focus on creating a flexible frontend and backend with the necessary security measures in place. By utilizing waterfall software development methods and scrum software development methodology, we've been able to perfect our solutions. We take pride in delivering a near-perfect product,from a fully-fledged automated framework for mobile and web.</p>
@@ -73,7 +73,7 @@ const CustomSoftware = () => {
 
         
 
-        <div className='custom_methodology'>
+        <div className='custom_methodology' data-aos="fade-up">
           <h1>To Serve You The Best, We Breakaway From</h1>
           <div className='custom_methodology_inner'>
             <p>Cookie-cutter approach and create custom strategies that delivers results that we can be proud of. Using the <b>Agile Methodology</b>, a flexible and efficient way to build software products. With <b>Scrum Consulting</b>, you can learn about your product in every sprint and get the most trusted framework of Agile. From <b>development to maintenance and post-delivery support</b>, we'll provide you with an end-to-end solution. Your <b>product's security </b>is our top priority - we'll make sure it's backed with the right security protocols.</p>
@@ -83,28 +83,28 @@ const CustomSoftware = () => {
 
         <div className='custom_stack'>
           <div className='custom_stack_left'>
-            <div className='custom_stack_left_inner'>
+            <div className='custom_stack_left_inner' data-aos="fade-right">
             <h1>The Right Tech Stack Matters </h1>
             <p>The tech stack is one of the key factors to consider when you're hiring a team because it can be a complex and difficult choice. It is the foundation of a product and a combination of software, hardware and other tools that combine to create the final product. The importance of having a great tech stack is to ensure that the product is able to provide a great user experience. With our experience of working with various stacks, we have the edge.</p>
           </div></div>
           <div className='custom_stack_right'>
-            <div className='custom_stack_right_circle stack_circle1'>
+            <div className='custom_stack_right_circle stack_circle1' data-aos="fade-up-right">
               <h3>Mob App Dev</h3>
               <p>Java, IoS,Ionic,<br/>React native</p>
             </div>
-            <div className='custom_stack_right_circle stack_circle2'>
+            <div className='custom_stack_right_circle stack_circle2'  data-aos="zoom-in-down">
               <h3>Web Dev</h3>
               <p> React,Angular, NodeJs,<br/> Laravel, PHP, Python,<br/>HTML, CSS</p>
             </div>
-            <div className='custom_stack_right_circle stack_circle3'>
+            <div className='custom_stack_right_circle stack_circle3' data-aos="fade-up-right" >
               <h3>DevOps</h3>
               <p>Jenkins, Solarwinds, <br/>Prometheus, Splunk, <br/>Nagios, RabbitMQ</p>
             </div>
-            <div className='custom_stack_right_circle stack_circle4'>
+            <div className='custom_stack_right_circle stack_circle4' data-aos="zoom-in-left">
               <h3>Cloud Tech Stack</h3>
               <p>AWS GCP</p>
             </div>
-            <div className='custom_stack_right_circle stack_circle5'>
+            <div className='custom_stack_right_circle stack_circle5' data-aos="zoom-in-up">
               <h3>Database</h3>
               <p>MySQL, MongoDB,<br/>PostgreSQL, Reddis,<br/> SQLite</p>
             </div>
