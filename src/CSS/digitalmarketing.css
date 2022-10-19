@@ -22,7 +22,7 @@
 .dm_heading_container::before{
     content: '';
     /* background-color: #ff333c; */
-    background-color: #525050;
+    background-color: #25125e;
     z-index: -1;
     position: absolute;
     top: 0%;
@@ -54,8 +54,8 @@
 .dm_tagline {
     margin-left: 70px;
     margin-right: 70px;
-    color: #313131;
-    background-color:#f2f2f2;
+    color: white;
+    background-color: #25125e;
     padding: 30px 50px;
     text-align: justify;
 }
@@ -64,4 +64,22 @@
     letter-spacing: 1px;
     line-height: 1.63;
 
+}
+.dm_offer >h1{
+    text-align: center;
+    font-weight: 500;
+}
+.dm_services_inner_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dm_package > h1{
+    text-align: center;
+    font-weight: 500;
+}
+.dm_package_inner{
+    background-color: #ff333c;
+    height: 400px;
 }

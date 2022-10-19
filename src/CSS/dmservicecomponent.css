@@ -1,0 +1,19 @@
+.dmservicescomponent{
+    height: 300px;
+    width: 320px;
+    border: 2px solid #ff333c;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 25px;
+  margin: 0px 25px 30px 0px;
+}
+.dmservicescomponent > h5{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.dmservicescomponent > p{
+    text-align: justify;
+    font-size: 16px;
+    
+}
