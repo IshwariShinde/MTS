@@ -26,6 +26,7 @@ import CustomSoftware from './Components/Services/CustomSoftware'
 import WebDevelopment from './Components/Services/WebDevelopment'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import DigitalMarketing from './Components/Services/DigitalMarketing'
 
 const App = () => {
   useEffect(()=>{
@@ -46,6 +47,7 @@ const App = () => {
        
         <Route path='/customsoftware' element={<CustomSoftware />} />
         <Route path='/webdevelopment' element= {<WebDevelopment/>}/>
+        <Route path='/digitalmarketing' element= {<DigitalMarketing />}/>
         
         
         <Route path='/photos' element={<Photos />} />

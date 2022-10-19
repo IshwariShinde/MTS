@@ -32,13 +32,15 @@ const CustomSoftware = () => {
         <div className='custom_discovery'>
           <div className='custom_discovery_left' data-aos="fade-right">
             <h1>Discovery</h1>
+            <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p>
             <div className='custom_discovery_left_inner'>
-            <p className='discovery1'>Survey your target customers and understand their needs</p>
+            
+            {/* <p className='discovery1'>Survey your target customers and understand their needs</p>
             <p className='discovery2'>In-depth analysis of your target audience</p>
             <p className='discovery3'>Good understanding of what features need to be included in your software</p>
             <p className='discovery4'>Feasibility study, market research and competitive analysis with the help of our BA and R&D experts.</p>
-            <p className='discovery5'>Deciding the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals </p></div>
-            {/* <p>The first step to develop a piece of software, we need to survey your target customers and understand their needs. In order to do this, we’ll need to carry out in-depth analysis of your target audience. By the end of the discovery phase, we would have a good understanding of what features need to be included in your software. This is where we put our BA and R&D experts to work along with you to do a feasibility study, market research and competitive analysis. Based on which a decision is made to choose the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals.</p> */}
+            <p className='discovery5'>Deciding the right tech stack that would help us develop a software perfectly in sync with your business strategy and goals </p>*/}</div> 
+            
           </div>
           <div className='custom_discovery_right' >
             <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img' data-aos="fade-left" />
