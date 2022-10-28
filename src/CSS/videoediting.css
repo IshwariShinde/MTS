@@ -1,0 +1,170 @@
+.videoediting{
+    font-family: 'Open Sans', sans-serif;
+}
+.videoediting_top::before{
+    content: " ";
+    background: url("https://ishwarishinde.github.io/cdn/videoediting.jpg") center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.videoediting_top{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+.videoediting_heading_container::before{
+    content: '';
+    background-color: #525050;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    /* border-radius: 0 0 50% 50% / 0 0 100% 100%; */
+    /* transform: scaleX(1.5); */
+    opacity: 0.39;
+}
+.videoediting_heading_container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+
+}
+.video_heading{
+    font-size: 70px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.videoediting_description{
+    font-size: 21px;
+    font-weight: 200;
+    margin-top: -35px;
+    letter-spacing: 2px;
+}
+.videoediting_tagline{
+    padding: 30px 90px;
+    text-align: center;
+    color: #383838;
+}
+.videoediting_tagline > p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: center;
+}
+.videoediting_quote1{
+    display: flex;
+    padding: 50px 90px;
+    background-color: #f2f2f2;
+}
+.quoteline{
+    position: relative;
+    height: 3px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #ff333c;
+    /* color: #ff333c; */
+    font-size: 20px;
+    transform: rotate(90deg);
+    /* animation: lineanimate 2s  forwards ; */
+}
+/* @keyframes lineanimate{
+    0% {
+        height: 0px;
+      }
+      100% {
+        height: 300px;
+      }
+} */
+.videoediting_quote1_left{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+}
+.videoediting_quote1_left > h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+.videoediting_quote1_right{
+    flex: 0.6;
+}
+.videoediting_quote1_right > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: justify;
+}
+.videoediting_quote2{
+    display: flex;
+    padding: 50px 90px;
+    background-color: #f2f2f2;
+}
+.videoediting_quote2_left{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+}
+.videoediting_quote2_left > h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.videoediting_quote2_right{
+    flex: 0.6;
+}
+.videoediting_quote2_right > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: justify;
+}
+.videoediting_types >h1{
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+.videoediting_types_inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.videoediting_bottom{
+    display: flex;
+    padding: 50px 90px;
+}
+.VEimg{
+    width: 400px;
+    border-radius: 5%;
+}
+.videoediting_bottom_left{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoediting_bottom_right{
+    flex: 0.6;
+}
+.videoediting_bottom_right > h1{
+    font-size: 34px;
+    font-weight: 700;
+    /* text-align: center; */
+}
+.videoediting_bottom_right > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: justify;
+}
+
+
+

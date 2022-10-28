@@ -29,18 +29,20 @@
 .connect_btn_style{
     cursor: pointer;
     padding: 6px 12px;
-    background-color: white;
-    border: 2px solid#ff3738;
-    font-size: 14px;
-    font-weight: 500;
-    color: #ff3738;
+    background-color: #EB5757;
+   border: none;
+   color: #fff;
+   font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  
     border-radius: 4px;
     margin-right: 20px;
 }
-.connect_btn_style:hover{
-    background-color: #ff3738;
-    color: black;
-}
+/* .connect_btn_style:hover{
+    box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 10px #39ff14;
+    margin-left: 15px;
+} */
 .linkStyle{
     text-decoration: none;
     color: black;

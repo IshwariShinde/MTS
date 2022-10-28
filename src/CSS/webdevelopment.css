@@ -1,5 +1,5 @@
 .WebDevelopment{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .webdev_top::before{
 content: "";
@@ -21,7 +21,7 @@ z-index: -1;
 }
 .webdev_heading_container::before {
     content: '';
-    /* background-color: #ff333c; */
+   
     background-color: #525050;
     z-index: -1;
     position: absolute;
@@ -55,13 +55,89 @@ z-index: -1;
 .webdev_tagline{
     margin-left: 70px;
     margin-right: 70px;
-    color: #313131;
-    background-color:#f2f2f2;
     padding: 30px 50px;
-    text-align: justify;
 }
 .webdev_tagline > p{
+    /* color: #393939; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: center;
+    
+}
+
+.webdev_process > h1{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+.webdev_process_inner{
+    background-color: #f2f2f2;
+    padding-bottom: 100px;
+}
+.webdev_process_inner_row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.webdev_whyus{
+    display: flex;
+    padding: 50px 90px;
+    
+
+}
+.webdev_whyus_left{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.webdev_whyus_left > h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.web_quoteline{
+    height: 3px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #ff333c;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+.webdev_whyus_right{
+    flex: 0.6;
+}
+.webdev_whyus_right > p{
     font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.63;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: justify;
+}
+
+.webdev_bottom{
+    display: flex;
+    padding: 50px 90px;
+    
+}
+.webdev_bottom_left{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+}
+.webdev_bottom_left > h1{
+    
+    font-size: 34px;
+    font-weight: 700;
+}
+.webdev_bottom_right{
+    flex: 0.6;
+}
+.webdev_bottom_right >p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: justify;
 }

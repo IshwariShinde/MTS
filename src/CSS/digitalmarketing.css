@@ -1,5 +1,6 @@
 .digitalmarketing{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+   
 }
 .dm_top::before{
     content: " ";
@@ -42,8 +43,8 @@
 }
 .dm_heading{
     font-size: 70px;
-    letter-spacing: 1.2px;
-    font-weight: 600;
+    /* letter-spacing: 1.2px; */
+    /* font-weight: 600; */
 }
 .dm_description{
     font-size: 21px;
