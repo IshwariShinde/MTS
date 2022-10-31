@@ -28,6 +28,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import DigitalMarketing from './Components/Services/DigitalMarketing'
 import VideoEditing from './Components/Services/VideoEditing'
+import BusinessIntelligence from './Components/Services/BusinessIntelligence'
 
 const App = () => {
   useEffect(()=>{
@@ -50,6 +51,7 @@ const App = () => {
         <Route path='/webdevelopment' element= {<WebDevelopment/>}/>
         <Route path='/digitalmarketing' element= {<DigitalMarketing />}/>
         <Route path='/videoediting' element= {<VideoEditing />}/>
+        <Route path='/businessintelligence' element= {<BusinessIntelligence />}/>
         
         
         <Route path='/photos' element={<Photos />} />

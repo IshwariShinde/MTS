@@ -1,0 +1,174 @@
+.businessIntelligence{
+    font-family: 'Open Sans', sans-serif;
+}
+.bi_top::before{
+    content: " ";
+    background: url("https://ishwarishinde.github.io/cdn/bi2.jpg") center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.bi_top{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+.bi_heading_container::before{
+    content: '';
+    /* background-color: #525050; */
+    background-color: #474747;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    /* border-radius: 0 0 50% 50% / 0 0 100% 100%; */
+    /* transform: scaleX(1.5); */
+    opacity: 0.39;
+}
+.bi_heading_container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+
+}
+.bi_heading{
+    font-size: 70px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+   
+}
+.bi_description{
+    font-size: 21px;
+    font-weight: 200;
+    margin-top: -35px;
+    letter-spacing: 2px;
+   
+}
+.bi_tagline{
+    padding: 30px 90px;
+    /* text-align: center; */
+    color: #383838;
+}
+.bi_tagline > p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
+    /* text-align: center; */
+}
+.bi_offer{
+    display: flex;
+    margin-top: 35px;
+}
+.bi_offer_left{
+    flex: 0.5;
+    padding: 0px 75px;
+}
+.bi_offer_left > h1{
+    font-size: 34px;
+    font-weight: 600;
+    color: #ff333c;
+    text-align: center;
+}
+.bi_offer_left > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.17px;
+    color: #383838;
+    text-align: justify;
+}
+.bi_offer_right{
+    flex: 0.5;
+}
+.bi_offer_right_img{
+    width: 600px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border-radius: 10px;
+}
+.bi_insights{
+    /* padding: 0px 50px; */
+    text-align: center;
+    margin-top: 60px;
+    /* margin-left: 40px; */
+
+}
+.bi_insights >h1{
+    font-size: 34px;
+    font-weight: 700;
+   
+}
+.bi_insights_inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+.bi_benefits{
+    background-color: #f2f2f2;
+    padding: 10px 80px;
+    margin-top: 35px;
+}
+.bi_benefits > h1{
+    text-align: center;
+    color: #ff333c;
+    font-size: 34px;
+    font-weight:600;
+
+}
+.bi_services::before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #252B42;
+    /* background:url("https://ishwarishinde.github.io/cdn/dummy1.jpg") center/cover; */
+    z-index: -1;
+    /* opacity: 0.39; */
+}
+.bi_services{
+    
+    
+    padding: 20px 0px;
+}
+.bi_services_content::before{
+    content: "";
+    position:absolute;
+    background-color: #3f3f3f; 
+    z-index: -1;
+    /* top: 0; */
+    height: 100%;
+    width: 100%;
+    opacity: 0.49;
+}
+.bi_services{
+    /* position: relative; */
+}
+.bi_services_content > h1{
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+}
+.bi_services_content > p{
+    text-align: center;
+    color: #f2f2f2
+}
+.bi_services_inner{
+    padding: 10px 90px;
+}
+.bi_services_inner_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

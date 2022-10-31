@@ -52,21 +52,6 @@
 .webdevprocess .webcard:hover .webface.webface1  .webcontent> h3{
 color: #fff;
 }
-.webdevprocess .webcard .webface.webface1  .webcontent> h5{
-    position: absolute;
-    bottom: -22px;
-    right: 0;
-    background-color: #ff5058;
-    /* background-color: #f2f2f2; */
-    padding: 15px;
- 
-    color: #fff;
-    /* color: #ff333c; */
-    border-top-left-radius: 50px;
-   /* font-size: 12px; */
-
-    /* border-radius: 50%; */
-}
 .webdevprocess .webcard .webface.webface2{
     position: relative;
     background: #fff;

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../CSS/webdevprocess.css'
 
-const WebDevProcess = ({webprocessicon,webprocesstitle,webprocessdescription,webprocessNo}) => {
+const WebDevProcess = ({webprocessicon,webprocesstitle,webprocessdescription}) => {
   return (
     <div className='webdevprocess'>
         <div class="webcard">
@@ -9,7 +9,7 @@ const WebDevProcess = ({webprocessicon,webprocesstitle,webprocessdescription,web
                 <div class="webcontent">
                     <img src={webprocessicon} alt="webicon"/>
                     <h3>{webprocesstitle}</h3>
-                    <h5>{webprocessNo}</h5>
+                   
                 </div>
             </div>
             <div class="webface webface2">

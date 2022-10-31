@@ -19,7 +19,7 @@ const CustomSoftware = () => {
             
           
         </div>
-        <div className='customsoftware_approach' data-aos="fade-in-up">
+        <div className='customsoftware_approach' >
          
             <div className='customsoftware_approach_inner ' >
               <h1>The Approach</h1>
@@ -49,16 +49,16 @@ const CustomSoftware = () => {
           </div>
         </div>
         <div className='custom_user_journey'>
-          <div className='custom_user_journey_left' data-aos="fade-up-right">
+          <div className='custom_user_journey_left'>
           <img src='https://ishwarishinde.github.io/cdn/dummy9.jpg' alt='discovery' className='custom_discovery_right_img'  />
           </div>
-          <div className='custom_user_journey_right' data-aos="fade-up-left">
+          <div className='custom_user_journey_right' >
             <h1>User Journey</h1>
             <p>Developing software can be difficult to do if you don't have a clear plan of what you want your users to experience when using it. That's why we believe that the best way to go about developing software is by first creating a user journey map. This will help show and clarify the steps that users will take when using the software and what tasks they need to complete, as well as any problems they may face along the way. By having this user journey already mapped out, it'll be easier to optimize all the steps in the process so that users can easily accomplish their goal without feeling lost or confused. User journey mapping is an essential tool for any product or website that wants to ensure their users have the best experience possible.</p>
           </div>
         </div>
 
-        <div className='custom_dev_test_deploy' data-aos="zoom-in">
+        <div className='custom_dev_test_deploy' >
           <div className='custom_dev_test_deploy_inner'>
           <h1>Development</h1>
             <p>After we've determined how the user would ideally interact with the software, we begin the development process. Our custom software development services focus on creating a flexible frontend and backend with the necessary security measures in place. By utilizing waterfall software development methods and scrum software development methodology, we've been able to perfect our solutions. We take pride in delivering a near-perfect product,from a fully-fledged automated framework for mobile and web.</p>

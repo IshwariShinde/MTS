@@ -4,17 +4,14 @@
 
 .customsoftware_top::before {
     content: " ";
-    background: url("https://ishwarishinde.github.io/cdn/dummy1.jpg") center/cover;
+    background: url("https://ishwarishinde.github.io/cdn/customsoftware.jpg") center/cover;
     position: absolute;
     height: 90%;
     width: 100%;
     z-index: -1;
     top: 0;
     left: 0;
-    /* background-color: #ff333c; */
-    /* border-radius: 0 0 50% 50% / 0 0 100% 100%; */
-    /* opacity: 0.79; */
-    /* transform: scaleX(1.5); */
+    /* opacity: 1; */
 
 }
 
@@ -32,7 +29,6 @@
 
 .customsoftware_heading_container::before {
     content: '';
-    /* background-color: #ff333c; */
     background-color: #525050;
     z-index: -1;
     position: absolute;
@@ -40,9 +36,7 @@
     left: 0%;
     height: 90%;
     width: 100%;
-    /* border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    transform: scaleX(1.5); */
-    opacity: 0.39;
+    opacity: 0.69;
 }
 
 .customsoftware_heading_container {
@@ -99,15 +93,16 @@
     margin-right: 70px;
     color: #383838;
     /* background-color:#f2f2f2; */
-    padding: 30px 50px;
+    padding: 0px 50px;
     text-align: justify;
 }
 
 
 .customsoftware_mid>p {
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.63;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
+    text-align: center;
 }
 
 .customsoftware_approach::before {
@@ -115,17 +110,10 @@
     background: url("https://ishwarishinde.github.io/cdn/dummy6.jpg") no-repeat center/cover;
     background-color: #ff333c;
     position: absolute;
-    /* top: 15%;
-    left: 19%; */
     height: 100%;
     width: 100%;
-    /* height: 2px;
-    width: 1008px; */
-    /* top: 30px; */
-    /* transform: skewY(-15deg); */
     z-index: -1;
     opacity: 0.9;
-    /* position: fixed; */
 }
 
 .customsoftware_approach {
@@ -153,9 +141,9 @@
 }
 
 .customsoftware_approach_inner_content>p {
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.63;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
     text-align: justify;
 
 }
@@ -193,9 +181,9 @@
 
 
 .custom_discovery_left  >p {
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.63;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
     text-align: justify;
 }
 
@@ -227,9 +215,9 @@
 }
 
 .custom_user_journey_right>p {
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.63;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
     text-align: justify;
 }
 
@@ -324,8 +312,13 @@
     border-radius: 5px;
     text-align: justify;
     margin-top: 10px;
-    font-size: 18px;
-    line-height: 1.63rem;
+   
+}
+.custom_methodology_inner > p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
+    
 }
 
 .custom_stack {
@@ -364,10 +357,9 @@
 }
 
 .custom_stack_left_inner>p {
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.63;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.17px;
     text-align: justify;
 }
 

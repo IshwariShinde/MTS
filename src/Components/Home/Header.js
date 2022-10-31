@@ -29,7 +29,7 @@ const Header = () => {
           <div className='service_dropdown_content'>
           <li><NavLink to={'/customsoftware'} className="linkStyle" >Custom Software</NavLink></li>
           <li><NavLink to={'/webdevelopment'} className="linkStyle" >Web Development</NavLink></li>
-          <li><NavLink to={'/appdevelopment'} className="linkStyle" >Mobile App Development</NavLink></li>
+          <li><NavLink to={'/businessintelligence'} className="linkStyle" >Business Intelligence</NavLink></li>
           <li><NavLink to={'/videoediting'} className="linkStyle" >Video Editing</NavLink></li>
           <li><NavLink to={'/graphicdesign'} className="linkStyle" >Graphic Designing</NavLink></li>
           <li><NavLink to={'/digitalmarketing'} className="linkStyle" >Digital Marketing</NavLink></li>

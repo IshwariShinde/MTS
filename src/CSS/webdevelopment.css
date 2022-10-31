@@ -71,8 +71,23 @@ z-index: -1;
     font-size: 34px;
     font-weight: 700;
 }
+.webdev_process_inner::before{
+    content: " ";
+    background: url("https://ishwarishinde.github.io/cdn/webprocess.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* opacity: 0.6; */
+}
 .webdev_process_inner{
-    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    /* height: 80vh; */
+    overflow-x: hidden;
+    /* background-color: #f2f2f2; */
     padding-bottom: 100px;
 }
 .webdev_process_inner_row{
