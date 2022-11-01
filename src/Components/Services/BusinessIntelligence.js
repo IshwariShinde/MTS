@@ -3,6 +3,7 @@ import '../../CSS/businessintelligence.css'
 import BiBenefitComponent from './BiBenefitComponent'
 import BiInsightsComponent from './BiInsightsComponent'
 import BiservicesComponent from './BiservicesComponent'
+import ServiceContact from './ServiceContact'
 
 const BusinessIntelligence = () => {
     return (
@@ -66,6 +67,23 @@ const BusinessIntelligence = () => {
 
                 </div></div>
             </div>
+
+
+            <div className='bi_stack'>
+
+            </div>
+
+            <div className='bi_whyus'>
+                <div className='bi_whyus_left'>
+                    <h1>Why Choose Us</h1>
+                    <p>Our logical data hierarchy and capture of operational data across multiple years and subjects lets you get a clear perspective of how your organization is performing.</p>
+                </div>
+                <div className='bi_whyus_right'>
+                    <img src='https://ishwarishinde.github.io/cdn/bi2.jpg' alt='img' />
+                </div>
+            </div>
+
+            <ServiceContact />
         </div>
     )
 }

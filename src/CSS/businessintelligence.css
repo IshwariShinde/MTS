@@ -1,5 +1,6 @@
 .businessIntelligence{
     font-family: 'Open Sans', sans-serif;
+   
 }
 .bi_top::before{
     content: " ";
@@ -144,15 +145,17 @@
 .bi_services_content::before{
     content: "";
     position:absolute;
-    background-color: #3f3f3f; 
+    /* background-color: #3f3f3f;  */
     z-index: -1;
     /* top: 0; */
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     opacity: 0.49;
 }
 .bi_services{
     /* position: relative; */
+    overflow: hidden;
+    margin-bottom: 150px;
 }
 .bi_services_content > h1{
     text-align: center;
@@ -165,10 +168,41 @@
     color: #f2f2f2
 }
 .bi_services_inner{
+   margin-top: 40px;
+
     padding: 10px 90px;
 }
 .bi_services_inner_row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.bi_whyus{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px 80px;
+}
+.bi_whyus_left{
+    flex: 0.5;
+    padding: 0px 50px;
+}
+.bi_whyus_left> h1{
+    color: #ff333c;
+    text-align: center;
+    font-size: 34px;
+}
+.bi_whyus_left > p{
+    font-size: 18px;
+    text-align: center;
+}
+.bi_whyus_right{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bi_whyus_right > img{
+    width: 600px;
+    border-radius: 10px;
 }

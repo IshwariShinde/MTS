@@ -20,7 +20,7 @@
     height:230px;
 }
 .bi_front>h1{
-    font-size:25px;
+    font-size:21px;
  
     text-align: center;
     color: white;
@@ -85,9 +85,12 @@
       padding: 1em 2em;
       background: #313131;
       border-radius: 10px;}
+
+      .bi_flip > .bi_back>h2{
+        font-size: 20px;
+      }
      .bi_flip>.bi_back> p {
         font-size: 0.9125rem;
-        line-height: 160%;
         color: #999;
       }
     
