@@ -220,6 +220,8 @@ text-align: center;
 .contentaudit_services_inner{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .audit_whyUs{
     padding: 50px 90px;
