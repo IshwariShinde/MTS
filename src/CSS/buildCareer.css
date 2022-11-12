@@ -1,79 +1,122 @@
 .buildCareer{
-    background-color: #25215e ;
-    display: flex;
-    color: white;
+  display: flex;
+  padding: 30px 90px;
+  font-family: 'Open Sans', sans-serif;
 }
 .buildCareer_left{
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0px;
-    /* background-color:#25215e  ;
-    border-bottom-right-radius: 300px; */
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  /* background-color:#25215e  ;
+  border-bottom-right-radius: 300px; */
 
 
 }
 .buildCareer_right{
-    flex: 0.5;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+  flex: 0.5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 0px 50px; */
 }
-.buildCareer_right > h3{
-    font-size: 40px;
+.buildCareer_right > h1{
+  color: #ff333c;
+  font-size: 34px;
+  font-weight: 700;
 }
 .buildCareer_right > h6{
-    font-size: 15px;
+  font-size: 15px;
 }
 .buildCareer_right>p{
-    margin: 0;padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.17px;
+  text-align: justify;
+
 }
 .careerImg{
-    /* margin-left: 20px; */
-    width: 500px;
-    /* border-bottom-right-radius: 300px; */
-    /* background-color: #25215e; */
-}
-.buildCareer_btn{
-    padding: 5px 10px;
-    /* font-weight: bold; */
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color:#464373 ;
-    box-shadow: 0 0 5px #464373, 0 0 4px #464373, 0 0 5px #464373,;
-    color: white;
-    font-size: 20px;
-
-}
-.buildCareer_btn:hover{
-    color: black;
-    /* z-index: 100; */
-}
-#explore_btn{
-    position: relative;
-    overflow: hidden;
-    transition: all .45s ease-Out;
+  width: 600px;
+  border-radius: 10px;
+  
 }
 
-#circle {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: #BFC0C0;
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
-  }
-  #explore_btn:hover #circle {
-    width: 200%;
-    height: 500%;
-    opacity: 0.5;
-    top: -70px;
-    left: -70px;
-  }
+
+.button-48 {
+  appearance: none;
+   background: hsla(350, 93%, 61%, 1);
+
+  background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+  border-width: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #aba9a9;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #ff333c;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+  
+}
+.button-48:hover{
+  color: #FFFFFF;
+}
+
+.button-48:after {
+  background-color: #ff333c;
+  border-radius: 5px;
+
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;}

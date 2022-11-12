@@ -4,16 +4,16 @@ import '../../CSS/webdevprocess.css'
 const WebDevProcess = ({webprocessicon,webprocesstitle,webprocessdescription}) => {
   return (
     <div className='webdevprocess'>
-        <div class="webcard">
-            <div class="webface webface1">
-                <div class="webcontent">
+        <div className="webcard">
+            <div className="webface webface1">
+                <div className="webcontent">
                     <img src={webprocessicon} alt="webicon"/>
                     <h3>{webprocesstitle}</h3>
                    
                 </div>
             </div>
-            <div class="webface webface2">
-                <div class="webcontent">
+            <div className="webface webface2">
+                <div className="webcontent">
                     <p>{webprocessdescription}</p>
                         
                 </div>

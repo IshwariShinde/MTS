@@ -4,7 +4,7 @@
 
 .customsoftware_top::before {
     content: " ";
-    background: url("https://ishwarishinde.github.io/cdn/customsoftware.jpg") center/cover;
+    background: url("https://ishwarishinde.github.io/cdn/customsoftware2.jpg") center/cover;
     position: absolute;
     height: 90%;
     width: 100%;
@@ -28,7 +28,7 @@
 }
 
 .customsoftware_heading_container::before {
-    content: '';
+    /* content: '';
     background-color: #525050;
     z-index: -1;
     position: absolute;
@@ -36,17 +36,39 @@
     left: 0%;
     height: 90%;
     width: 100%;
-    opacity: 0.69;
+    opacity: 0.69; */
+
+    content: " ";
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+    /* background-color: #313131; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 80px;
+    z-index: -1;
+    padding: 10px;
+    /* opacity: 0.89; */
 }
 
 .customsoftware_heading_container {
 
     /* background-color: #25152e; */
-    color: white;
+    /* color: white;
     display: flex;
     flex-direction: column;
 
-    align-items: center;
+    align-items: center; */
     /* justify-content: center; */
     /* font-size: 50px; */
     /* letter-spacing: 2pt; */
@@ -57,20 +79,36 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 80px; */
     /* font-family: 'Playfair Display', serif; */
-    padding-top: 130px;
+    /* padding-top: 130px; */
+
+
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 50px; */
+     font-family: 'Playfair Display', serif;
 }
 
 .custom_heading {
-    font-size: 70px;
-    letter-spacing: 1.2px;
+    font-size: 50px;
     font-weight: normal;
 }
 
 .custom_description {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: normal;
-    margin-top: -35px;
+    margin-top: -45px;
+    padding: 20px;
     letter-spacing: 2px;
+    text-align: center;
+  
 }
 
 /* .customsoftware_mid::before {
@@ -125,7 +163,15 @@
     align-items: center;
 }
 .customsoftware_approach_inner{
-    background-color: #25215e;
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
     /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
     box-shadow: rgba(6, 6, 17, 0.35) 0px 5px 15px;
     padding: 40px 90px;
@@ -164,8 +210,9 @@
 .custom_discovery_left {
     flex: 0.5;
     position:relative;
-    background-color: #050505;
-    color: white;
+    background-color: #f2f2f2;
+    /* color: white; */
+    border-radius: 5px;
 
     padding: 10px 75px;
     
@@ -195,18 +242,21 @@
 
 .custom_discovery_right_img {
     width: 500px;
-    /* border-radius: 50%; */
+    border-radius: 40px;
 }
 
 
 .custom_user_journey {
     position: relative;
-    margin: 50px;
+    margin:80px 50px;
     display: flex;
 }
 
 .custom_user_journey_left {
     flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .custom_user_journey_right>h1 {
@@ -223,10 +273,12 @@
 
 .custom_user_journey_right {
     flex: 0.5;
-    background-color: #25215e;
+    /* background-color: #25215e; */
+    background-color: #f2f2f2;
     text-align: justify;
-    color: white;
+    /* color: white; */
     padding: 40px 90px;
+    border-radius: 5px;
 
 }
 
@@ -289,12 +341,21 @@
 
 .custom_methodology {
     margin: 50px 150px;
-    background-color: #25215e;
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 0px;
+    border-radius: 10px;
 }
 
 .custom_methodology>h1 {
@@ -391,6 +452,22 @@
     left: 30px;
 
 }
+.stack_circle1::before{
+    content: "";
+    background: url("https://ishwarishinde.github.io/cdn/customstack4.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.stack_circle2::before{
+    content: "";
+    background: url("https://ishwarishinde.github.io/cdn/customstack3.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
 
 .stack_circle2 {
     top: 40px;
@@ -401,6 +478,14 @@
     top: 5px;
     right: 90px;
 }
+.stack_circle3:before{
+    content: "";
+    background: url("https://ishwarishinde.github.io/cdn/customstack2.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
 
 .stack_circle4 {
     bottom: 35px;
@@ -409,4 +494,21 @@
     height: 160px;
     width: 160px;
 }
+.stack_circle4::before{
+    content: "";
+    background: url("https://ishwarishinde.github.io/cdn/customstack5.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.stack_circle5::before{
+    content: "";
+    background: url("https://ishwarishinde.github.io/cdn/customstack1.jpg") center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* z-index: -1; */
 
+}

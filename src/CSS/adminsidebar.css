@@ -1,0 +1,14 @@
+.adminsidebar{
+    flex: 0.2;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 50px 5px;
+}
+.adminnavlink{
+    text-decoration: none;
+    color: #383838;
+    background:none;
+}
+.adminnavlink:hover{
+    color: #ff333c;
+}

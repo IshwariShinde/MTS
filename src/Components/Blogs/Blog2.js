@@ -2,7 +2,7 @@ import React from 'react'
 import { HiUser } from "react-icons/hi";
 import { MdOutlineDateRange } from "react-icons/md";
 import '../../CSS/blog2.css'
-import '../../CSS/blog1.css'
+// import '../../CSS/blog1.css'
 
 const Blog2 = () => {
   return (

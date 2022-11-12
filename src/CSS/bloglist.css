@@ -1,0 +1,43 @@
+.bloglist > h1{
+    
+    text-align: center;
+    /* background-color: blanchedalmond; */
+}
+.bloglistContent{
+    flex: 0.8;
+    margin-top: 50px;
+    padding: 10px 80px;
+    /* background-color: cadetblue; */
+}
+.bloglist_inner{
+    display: flex;
+}
+.adminblognav{
+    position: absolute;
+    right: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloglist_btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 5px;
+    background-color: #ff333c;
+    color: white;
+    cursor: pointer;
+}
+.bloglistinnercontent{
+    margin-top: 60px;
+}
+.bloglistinnercontent > table{
+    border: 2px solid black;
+}
+.bloglistinnercontent > table>thead >tr>th{
+   
+        border-bottom: 1px solid black;
+        width: 200px;
+        border-right: 1px solid black;
+   
+}

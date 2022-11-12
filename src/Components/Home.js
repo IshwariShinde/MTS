@@ -4,7 +4,7 @@ import Achievements from './Home/Achievements'
 import BuildCareer from './Home/BuildCareer'
 import Expertise from './Home/Expertise'
 import HeroSection from './Home/HeroSection'
-import Media from './Home/Media'
+// import Media from './Home/Media'
 import Partners from './Home/Partners'
 import Tagline from './Home/Tagline'
 
@@ -18,7 +18,7 @@ const Home = () => {
       <Expertise />
         <Achievements/>
         <Partners />
-        <Media />
+        {/* <Media /> */}
       
         
         

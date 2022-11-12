@@ -10,7 +10,7 @@ const ContactForm = () => {
                 <div className='form_row'><input type="text" name="name" required placeholder='Full Name' className='form_input'/></div>
                 <div className='form_row'><input type="email" name='email' required placeholder='Email' className='form_input' /></div> 
                 <div className='form_row'><input type="number" name="phone" required placeholder='Phone Number' className='form_input'/></div>
-                <div className='form_row'><select name="country" id="country" class="county" className='form_input'>
+                <div className='form_row'><select name="country" id="country" className="county" className='form_input'>
                     <option value="0">-- Select Country --</option>
                     <option  value="United States">United States</option>
                     <option value="Canada">Canada</option>

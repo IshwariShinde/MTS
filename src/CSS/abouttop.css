@@ -14,9 +14,30 @@
     height: 50vh;
     
 }
+.abt_heading_container::before{
+    content: " ";
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+    /* background-color: #313131; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 80px;
+    z-index: -1;
+    /* opacity: 0.69; */
+
+}
 .abt_heading_container{
-    background-color: #ff333c;
-    /* background-color: #25152e; */
     color: white;
     display: flex;
     position: absolute;
@@ -29,10 +50,7 @@
     font-size: 50px;
     letter-spacing: 2pt;
     font-weight: 600;
-    opacity: 0.89;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 80px;
+ 
+ 
     font-family: 'Playfair Display', serif;
 }

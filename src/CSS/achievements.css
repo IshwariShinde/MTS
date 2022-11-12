@@ -1,41 +1,80 @@
+
 .achievements{
-    text-align: center;
-    /* background-color: #ff3738; */
-    /* margin-top: -20px; */
-}
-.amt_mainContent{
+    height: 600px;
+    padding: 30px 80px;
     display: flex;
+    align-items: center;
+  
+    
+}
+.achievements_content::before{
+    content: " ";
+    background: url("https://ishwarishinde.github.io/cdn/ourachievemnets.jpg") center/cover no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+
+    
+}
+.achievements_content{
+    position: relative;
+    height: 500px;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+
+   
+}
+.achievements_content > h1{
+    /* color: #fff; */
+    margin-bottom: 80px;
+    font-size: 34px;
+}
+.achievement_card::before{
+    content: "";
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.69;
+}
+.achievement_card{
+   position: relative;
+    width: 284px;
+height: 221px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 10px 10px;
+
+}
+.achievements_inner{
+   
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
-    /* height: 200px; */
-    flex-wrap: wrap;
 }
-.amt_heading{
-
-    padding: 10px;
-    font-size: 20px;
+.achievement_card > h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 51px;
+line-height: 69px;
+color: #ff333c;
 }
-.amt_content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px;
-   margin-right: 60px;
-   margin-bottom: 60px;
-
-}
-.amt_info{
-    margin-left: 10px;
-}
-.amt_num{
-    font-size: 40px;
-    font-weight: 600;
-}
-.amt_text{
-  
-    font-weight: bold;
-}
-.achievement_img{
-    width: 100px;
+.achievement_card > p{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
 }

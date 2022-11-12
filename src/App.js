@@ -29,6 +29,14 @@ import 'aos/dist/aos.css';
 import DigitalMarketing from './Components/Services/DigitalMarketing'
 import VideoEditing from './Components/Services/VideoEditing'
 import BusinessIntelligence from './Components/Services/BusinessIntelligence'
+import Admin from './Components/Admin'
+import Adminblog from './Components/Admin/Adminblog'
+import AdminPhotos from './Components/Admin/AdminPhotos'
+import Bloglist from './Components/Admin/Bloglist'
+import AddBlog from './Components/Admin/AddBlog'
+import DataAnnotation from './Components/Services/DataAnnotation'
+import ContentAuditing from './Components/Services/ContentAuditing'
+import BlogDescription from './Components/Contact/BlogDescription'
 
 const App = () => {
   useEffect(()=>{
@@ -39,6 +47,12 @@ const App = () => {
       <BrowserRouter>
       <Header />
       <Routes>
+        <Route path='/admin' element={<Admin/>} />
+        <Route path='/adminblogs' element={<Adminblog/>} />
+        <Route path='/adminphotos' element={<AdminPhotos/>} />
+        <Route path='/allbloglist' element={<Bloglist/>} />
+        <Route path='/addblog' element={<AddBlog
+        />} />
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/whoweare' element={<About/>} />
@@ -52,6 +66,8 @@ const App = () => {
         <Route path='/digitalmarketing' element= {<DigitalMarketing />}/>
         <Route path='/videoediting' element= {<VideoEditing />}/>
         <Route path='/businessintelligence' element= {<BusinessIntelligence />}/>
+        <Route path='/dataannotation' element= {<DataAnnotation />}/>
+        <Route path='/contentauditing' element= {<ContentAuditing />}/>
         
         
         <Route path='/photos' element={<Photos />} />
@@ -69,6 +85,7 @@ const App = () => {
         <Route path='/blog5description' element={ <Blog5/>} />
         <Route path='/blog6description' element={ <Blog6/>} />
         <Route path='/blog7description' element={ <Blog7/>} />
+        <Route path='/blogdescription' element={ <BlogDescription/>} />
         {/* <Route path='/workexperience' element={ <Blog7/>} /> */}
        
       

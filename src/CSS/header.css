@@ -46,6 +46,7 @@
 .linkStyle{
     text-decoration: none;
     color: black;
+    background: none;
 }
 .linkStyle:hover{
     color: #ff3738;

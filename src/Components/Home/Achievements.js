@@ -8,7 +8,30 @@ import '../../CSS/achievements.css';
 const Achievements = () => {
   return (
     <div className='achievements'>
-        <div className='amt_heading'>
+      
+    <div className='achievements_content'>
+      <h1>Our Achievements</h1>
+      <div className='achievements_inner'>
+            <div className='achievement_card'>
+                <h1>103+</h1>
+                <p>Projects Completed</p>
+            </div>
+            <div className='achievement_card'>
+                <h1>151+</h1>
+                <p>Happy Clients</p>
+            </div>
+            <div className='achievement_card'>
+                <h1>75%</h1>
+                <p>Referral Clients</p>
+            </div>
+            <div className='achievement_card'>
+                <h1>4000+</h1>
+                <p>Visitors</p>
+            </div>
+            </div>
+
+        </div>
+        {/* <div className='amt_heading'>
         <h2>Our Achievements</h2>
         </div>
         <div className='amt_mainContent'>
@@ -53,7 +76,7 @@ const Achievements = () => {
             </div>
 
         </div></div>
-       
+        */}
     </div>
   )
 }

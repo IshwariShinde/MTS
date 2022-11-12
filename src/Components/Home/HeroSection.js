@@ -7,9 +7,9 @@ let index = 1;
 // show(index);
 let n=0;
 
-function plusDivs(n) {
-  show(index += n);
-}
+// function plusDivs(n) {
+//   show(index += n);
+// }
 
 function show() {
   let i;
@@ -34,13 +34,13 @@ function show() {
 
 }
 
-function next(){
-  n=1;
-}
+// function next(){
+//   n=1;
+// }
 
-function prev(){
-n=-1;
-}
+// function prev(){
+// n=-1;
+// }
 
 // function plusSlides(n) {
 //   show(index += n);
@@ -75,8 +75,8 @@ n=-1;
         <img src="https://ishwarishinde.github.io/cdn/sliderimg.jpg" alt="heroimg" className='sliderImg animate__animated animate__lightSpeedInRight' />
       </div> </div>
 
-      <a className="prev" onclick="plusDivs(-1)" >&#10094;</a>
-  <a className="next" onclick="plusDivs(+1)" >&#10095;</a>
+      {/* <a  href="#" className="prev" onclick="plusDivs(-1)" >&#10094;</a> */}
+  {/* <a className="next" href='#' onclick="plusDivs(+1)" >&#10095;</a> */}
 
    
 

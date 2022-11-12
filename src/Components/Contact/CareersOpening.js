@@ -19,8 +19,8 @@ const CareersOpening = ({openingTitle,skills,experience,responsibility}) => {
   
     return (
         <div className='careersOpening' onClick={CardToggle} >
-            <div type="button" class="collapsible">{openingTitle}< RiArrowDropDownLine className='opening_icon'/></div>
-            <div class="content content_visibility">
+            <div type="button" className="collapsible">{openingTitle}< RiArrowDropDownLine className='opening_icon'/></div>
+            <div className="content content_visibility">
                 <p><b>Skills:</b>{skills}<br></br></p>
                 <p><b>Experience Level:</b>{experience}<br></br></p>
                 <p><b>Responsibility:</b>{responsibility}</p>

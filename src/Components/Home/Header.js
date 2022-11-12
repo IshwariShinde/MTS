@@ -31,7 +31,8 @@ const Header = () => {
           <li><NavLink to={'/webdevelopment'} className="linkStyle" >Web Development</NavLink></li>
           <li><NavLink to={'/businessintelligence'} className="linkStyle" >Business Intelligence</NavLink></li>
           <li><NavLink to={'/videoediting'} className="linkStyle" >Video Editing</NavLink></li>
-          <li><NavLink to={'/graphicdesign'} className="linkStyle" >Graphic Designing</NavLink></li>
+          <li><NavLink to={'/dataannotation'} className="linkStyle" >Data Annotation Services</NavLink></li>
+          <li><NavLink to={'/contentauditing'} className="linkStyle" >Content Auditing Services</NavLink></li>
           <li><NavLink to={'/digitalmarketing'} className="linkStyle" >Digital Marketing</NavLink></li>
           </div>
           </div>

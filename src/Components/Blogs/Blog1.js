@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../CSS/blog1.css';
+// import '../../CSS/blog1.css';
 import { HiUser } from "react-icons/hi";
 import { MdOutlineDateRange } from "react-icons/md";
 
