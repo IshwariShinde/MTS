@@ -9,7 +9,10 @@ import{
  DELETE_BLOG_REQUEST,
  DELETE_BLOG_SUCCESS,
  DELETE_BLOG_FAIL,
-CLEAR_ERRORS 
+CLEAR_ERRORS,
+GET_BLOG_REQUEST,
+GET_BLOG_SUCCESS,
+GET_BLOG_FAIL, 
 } from "../constatnts/blogConstants"
 
 
@@ -88,6 +91,24 @@ try {
   });
 }
 };
+
+export const getBlogDetails = (id) =>async(dispatch)=>{
+    try{
+        dispatch({type:GET_BLOG_REQUEST});
+
+        const {data} = await axios.get(`/api/v1/blog/${id}`);
+
+        dispatch({
+            type:GET_BLOG_SUCCESS,
+            payload:data.blog,
+        });
+    }catch(error){
+        dispatch({
+            type:GET_BLOG_FAIL,
+            payload:error.response.data.message,
+        });
+    }
+   };
 
 
 

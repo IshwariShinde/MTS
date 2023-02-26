@@ -2,7 +2,7 @@ import React from 'react'
 import Adminsidebar from './Admin/Adminsidebar'
 
 import '../CSS/admin.css'
-import Adminblog from './Admin/Adminblog'
+// import Adminblog from './Admin/Adminblog'
 import AdminPhotos from './Admin/AdminPhotos'
 import { Route, BrowserRouter, Routes} from "react-router-dom"
 

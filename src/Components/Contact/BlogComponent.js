@@ -1,25 +1,35 @@
 import React from 'react'
 import '../../CSS/blogComponent.css'
+import {Link} from "react-router-dom";
 import { HiUser,HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { MdOutlineDateRange } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
+import {format} from 'date-fns'
 
 
-const BlogComponent = ({blog}) => {
+
+const BlogComponent = ({blog})=>{
+  const blogDate=new Date()
   return (
+    <Link to ={`/blog/${blog._id}`} className="blogComponent_Link">
+
     <div className='blogComponent'>
         <div className="box">
                 <div className="blog_img">
-                <img src={blog.blogImage[0].url} alt={blog.blogTitle} className="blogImage"/>
-                    {/* <img  src={blog.blogImage} alt="pageflip" className='blogImage' /> */}
+                    <img  src={blog.images[0].url} alt={blog.blogTitle} className='blogImage' />
+                </div>
+                <div className='blogCategory'>
+                  <h5>{blog.category}</h5>
                 </div>
                 <div className='blogHeading'> <h1 id="blogHeading">{blog.blogTitle}</h1></div>
                 <div className='bloggerName_date'>
                   <div className='bloggerName'>
-                  <HiUser/><h5>{blog.bloggerName}</h5>
+                  <HiUser className=' bloggernamedate_icon'/><h5>{blog.bloggerName}</h5>
                   </div>
                   <div className='blogDate'>
-                  <MdOutlineDateRange/><h5>{blog.blogDate}</h5>
+                  <MdOutlineDateRange className=' bloggernamedate_icon'/><h5>
+                  {format(blogDate, 'dd/mm/yyyy')}</h5>
+                  
                   </div>
                   
                 </div>
@@ -30,48 +40,17 @@ const BlogComponent = ({blog}) => {
 
               
 
-                  <div className="blogNavigation"> <NavLink to={blog.bloglink} className="blogLink_style">Read More<HiOutlineArrowNarrowRight/></NavLink></div>
+                <NavLink to={`/blog/${blog._id}`} className="blogNavigation">Read More<HiOutlineArrowNarrowRight/></NavLink>
+              
             </div>
     </div>
+    </Link>
   )
 }
 
 export default BlogComponent
 
-// import React from 'react'
-// import '../../CSS/blogComponent.css'
-// import { HiUser,HiOutlineArrowNarrowRight } from "react-icons/hi";
-// import { MdOutlineDateRange } from "react-icons/md";
 
 
-// const BlogComponent = ({blogImg,blogTitle,bloggerName,blogDate,blogInfo}) => {
-//   return (
-//     <div className='blogComponent'>
-//         <div className="box">
-//                 <div className="blog_img">
-//                     <img  src={blogImg} alt="pageflip" className='blogImage' />
-//                 </div>
-//                 <div className='blogHeading'> <h1 id="blogHeading">{blogTitle}</h1></div>
-//                 <div className='bloggerName_date'>
-//                   <div className='bloggerName'>
-//                   <HiUser/><h5>{bloggerName}</h5>
-//                   </div>
-//                   <div className='blogDate'>
-//                   <MdOutlineDateRange/><h5>{blogDate}</h5>
-//                   </div>
-                  
-//                 </div>
-//                 <div className='blog_info'>
-//                     <p>{blogInfo}</p>
-//                   </div>
-               
 
-              
 
-//                 <div className="blogNavigation">Read More<HiOutlineArrowNarrowRight/></div>
-//             </div>
-//     </div>
-//   )
-// }
-
-// export default BlogComponent

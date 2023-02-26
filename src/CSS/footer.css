@@ -61,3 +61,7 @@
     transform: scale(1.1);
     box-shadow: 0 0 4px #ff3738 ,0 0 5px #ff3738,0 0 4px #ff3738;
 }
+.company_address{
+    display: flex;
+    color: #FFFFFF;
+}

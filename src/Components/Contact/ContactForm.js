@@ -1,16 +1,69 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import '../../CSS/contactForm.css'
+import {  createContact,clearErrors} from '../../Actions/ContactAction'
+import {useDispatch,useSelector} from "react-redux";
+import Loader from '../layout/loader/loader'
+import { toast } from 'react-toastify';
+
 
 const ContactForm = () => {
+    const dispatch = useDispatch();
+    // const {expertises} = useSelector((state)=>state.expertises)
+    const {error,loading} = useSelector(
+        (state) => state.contact
+    );
+      
+    const [contactName,setContactName] = useState('')
+    const [contactemail,setcontactemail] = useState('')
+    const [contactNo,setcontactNo] = useState('')
+    const [country,setCountry] = useState('')
+    const [message,setMessage] = useState('')
+   
+
+    
+  const submitContact = (e) =>{
+    e.preventDefault();
+    toast.success('Thanks for contacting MTechno-Soft!', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover:false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+    const contactForm =  new FormData();
+ 
+    contactForm.set("contactName",contactName)
+    contactForm.set("contactemail",contactemail)
+    contactForm.set("contactNo",contactNo)
+    contactForm.set("country",country)
+    contactForm.set("message",message)
+     dispatch(createContact(contactForm));
+   };
+
+   useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+},[dispatch,error])
     return (
+        <>
+    {loading ? (
+        <Loader />
+    ) :(
         <div className='contactForm'>
-            <div className='contact_inner'>
-            <h1>Contact Us</h1>
-            <form className='contact_formInner'>
-                <div className='form_row'><input type="text" name="name" required placeholder='Full Name' className='form_input'/></div>
-                <div className='form_row'><input type="email" name='email' required placeholder='Email' className='form_input' /></div> 
-                <div className='form_row'><input type="number" name="phone" required placeholder='Phone Number' className='form_input'/></div>
-                <div className='form_row'><select name="country" id="country" className="county" className='form_input'>
+             
+            {/* <div className='contact_inner'> */}
+          
+
+            <form className='contact_formInner' onSubmit={submitContact}>
+                <div className='form_row'><input type="text" name="contactName" required placeholder='Full Name' value={contactName} className='form_input' onChange={e=>setContactName(e.target.value)} /></div>
+                <div className='form_row'><input type="email" name='contactemail' required placeholder='Email' value={contactemail} className='form_input' onChange={e=>setcontactemail(e.target.value)} /></div> 
+                <div className='form_row'><input type="number" name="contactNo" required value={contactNo} placeholder='Phone Number' className='form_input' onChange={e=>setcontactNo(e.target.value)}/></div>
+                <div className='form_row'><select name="country" id="country"  value={country} className='form_input' onChange={e=>setCountry(e.target.value)} style={{width:"980px"}}>
                     <option value="0">-- Select Country --</option>
                     <option  value="United States">United States</option>
                     <option value="Canada">Canada</option>
@@ -250,7 +303,7 @@ const ContactForm = () => {
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select></div>
                 <div className='form_row'>
-                    <textarea name='message' placeholder='Drop your message here' required  className='form_input' id='message'/>
+                    <textarea name='message' placeholder='Drop your message here' required value={message}  className='form_input' id='message' onChange={e=>setMessage(e.target.value)}/>
                 </div>
                 <div className='contact_btn'>
                     <input type='submit' value="Submit" className='submit_btn'/>
@@ -258,7 +311,12 @@ const ContactForm = () => {
 
 
             </form>
-        </div></div>
+        {/* </div> */}
+        <div className='contact_map'>
+            <p className='gMap'><iframe style={{filter: "invert(90%)"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3107144020723!2d73.79038361484336!3d18.56002548738604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295688a9a5b79%3A0x575c50ad6bbf51f0!2sMAHENDRA%20TECHNOSOFT%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1662550282369!5m2!1sen!2sin"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='gmap' height="350px" width="998px" className='gMap'></iframe></p>
+        </div>
+        
+        </div>)}</>
     )
 }
 

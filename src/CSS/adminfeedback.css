@@ -1,0 +1,11 @@
+.adminfeedback{
+    display: flex;
+}
+.adminfeedback_content{
+    flex: 0.8;
+}
+.adminfeedback_content> table>thead >tr>th{
+    width: 200px;
+ 
+
+}

@@ -1,76 +1,79 @@
-import React,{useEffect} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 import '../../CSS/blog.css'
-import {useDispatch} from 'react-redux'
 import BlogComponent from './BlogComponent'
-// import blogs from './Blogdata'
-// import { NavLink } from 'react-router-dom'
-import {getBlogs } from '../../Actions/BlogAction'
+import { clearErrors,getBlogs } from '../../Actions/BlogAction'
+import {useDispatch, useSelector} from "react-redux";
+import Loader from '../layout/loader/loader'
 
-
-
-
-const blog= {
-  blogImage:[{url:"https://ishwarishinde.github.io/cdn/blogimg1.jfif"}],
-  blogTitle:"Global Economy and Trade Impact of COVID-19",
-  bloggerName:"Smita Nikam",
-  blogDate:"31/12/2020",
-  blogInfo:"Covid-19 Pandamic",
-  bloglink:'/blogdescription',
-  _id:"isha",
-}
 
 
 const Blog = () => {
-  
-
-  const dispatch =useDispatch()
-  // const { loading, error, blogs } = useSelector((state) => state.blogs);
-  useEffect(() => {
+  const dispatch = useDispatch();
+  const { blogs, loading,error} = useSelector((state)=>state.blogs);
+  const [category, setCategory] = useState(blogs);
+  const filterResult=(catItem) =>{
+    const result=blogs.filter((curData)=>{
+      return curData.category===catItem
+    });
+    setCategory(result)
+  }
+  useEffect(()=>{
+    if(error) {
+      dispatch(clearErrors());
+    }
     dispatch(getBlogs());
-  }, [dispatch]);
-  
-console.log(getBlogs)
-  // useEffect(() => {
-  //   if (error) {
-  //     alert.error(error);
-  //     dispatch(clearErrors());
-  //   }
-  //   dispatch(getBlogs());
-  // }, [dispatch, error, alert]);
-
+  },[dispatch,error]);
  
   return (
-   <>
-    <BlogComponent blog={blog} />
-    <BlogComponent blog={blog} />
-    <BlogComponent blog={blog} />
-    {/* {loading ? "loading": (
+    <Fragment>
+    {loading ? (
+      <Loader />
+    ):(
+      <Fragment>
+        <div className='blog_top'>
+        <div className='blog_heading_container'>
+            <p className='blog_heading'>MTechno-Soft blogs</p>
+            <p className='blog_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm. </p>
+          </div>
+        </div>
+        <div className='blog_wrapper'>
+          <div className='blog_category'>
+      <div className='blog_category_inner'>
+        <h2>Blog Category</h2>
+        <span className='blogCategoryLine'></span>
+              <button onClick={()=>setCategory(blogs)} className="category_btn">All</button>
+              <span className='blogCategorybtnLine'></span>
+              <button onClick={()=>filterResult('Technology')} className="category_btn">Technology</button>
+              <span className='blogCategorybtnLine'></span>
+              <button onClick={()=>filterResult('Enterprenurship')} className="category_btn">Enterprenurship</button>
+              <span className='blogCategorybtnLine'></span>
+              <button onClick={()=>filterResult('Business')} className="category_btn">Business</button>
+              <span className='blogCategorybtnLine'></span>
+              <button onClick={()=>filterResult('Marketing')} className="category_btn">Marketing</button>
+              <span className='blogCategorybtnLine'></span>
+              <button onClick={()=>filterResult('Career')} className="category_btn">Careers</button>
+              <span className='blogCategorybtnLine'></span>
+              </div>
+          </div>
+       <div className="blogs">
+        {category.map((blog)=>(
+          <BlogComponent key={blog._id} blog = {blog}/>
+        ))}
+       </div>
+       </div>
+
+   
+     
     
-    <div className='blog'>
-      
-       {blogs &&
-              blogs.map((blog) => (
-                <BlogComponent key={blog._id} blog={blog} />
-              ))} */}
-                      {/* {blogs.map(blog => (
-                    
-                      <BlogComponent blog={blog} />
-                  
-
-                ))} */}
-      
-       {/* <NavLink to='/blog1description' className="blogLink_style"><BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg1.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink> 
-       <NavLink to='/blog2description' className="blogLink_style"> <BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg2.jpg" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink>
-       <NavLink to='/blog3description' className="blogLink_style"> <BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg3.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink>
-        <NavLink to="/blog4description" className="blogLink_style"><BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg4.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink>
-        <NavLink to="/blog5description" className="blogLink_style"> <BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg5.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink>
-        <NavLink to="/blog6description" className="blogLink_style"><BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg6.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink>
-        <NavLink to="/blog7description" className="blogLink_style"><BlogComponent blogImg="https://ishwarishinde.github.io/cdn/blogimg7.jfif" blogTitle="Global Economy and Trade Impact of COVID-19" bloggerName="Smita Nikam" blogDate="31/12/2020" blogInfo="Covid-19 Pandamic"/></NavLink> */}
-
-    {/* {/* </div>
-      )} */}
-      </> 
+   
+    </Fragment>
+    )}
+    </Fragment>
   )
 }
 
-export default Blog
+export default Blog;
+
+
+
+

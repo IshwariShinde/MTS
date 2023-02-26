@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getBlogs} from "../../Actions/BlogAction";
+import { getBlogs } from "../../Actions/BlogAction";
 import { NavLink } from 'react-router-dom'
 import '../../CSS/bloglist.css'
 import Adminsidebar from './Adminsidebar'
@@ -8,104 +8,65 @@ import Adminsidebar from './Adminsidebar'
 const Bloglist = () => {
 
   const dispatch = useDispatch();
-  const blogstate = useSelector((state) => state.getAllBlogReducer);
-  const { loading, blogs, error } = blogstate;
-  console.log(blogs);
+  const { error, blogs } = useSelector((state) => state.blogs);
+
   useEffect(() => {
     dispatch(getBlogs());
   }, [dispatch]);
   return (
-    <div className='bloglist'>
-      <h1>All Blogs</h1>
-        <div className='bloglist_inner'>
+    <div className='admincontact'>
 
       <Adminsidebar />
       <div className='bloglistContent'>
       <div className='adminblognav'>
-      <NavLink to="/allbloglist" className="adminnavlink"> <button className='bloglist_btn'>All Blogs</button></NavLink>
+
+        
+      <NavLink to="/admin" className="adminnavlink"> <button className='bloglist_btn'>All Blogs</button></NavLink>
     <NavLink to="/addblog" className="adminnavlink" ><button className='bloglist_btn'>Add New Blog</button></NavLink>
     </div>
 
-    <div className='bloglistinnercontent'>
+    <div className='admincontact_content'>
+    <h1>All Blogs</h1>
     <table>
   <thead>
     <tr>
-      <th>Image</th>
+      {/* <th>Image</th> */}
       <th>Title</th>
       <th>Description</th>
       <th>Author</th>
       <th>Category</th>
-      <th>Action</th>
+      {/* <th>Action</th> */}
     </tr>
   </thead>
-  <tbody>
+ 
    
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-         
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-        <tr>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-          <td>Global Economy</td>
-        </tr>
-      
-    
-  </tbody>
+  <tbody>
+              {blogs &&
+                blogs.map((blog) => (
+                  <tr>
+                    {/* <td>
+                      <img
+                        src={blog.images[0].url}
+                        alt="logo"
+                        width="100px"
+                        height="100px"
+                      />
+                    </td> */}
+                    <td>{blog.blogTitle}</td>
+                    <td>{blog.bloggerName}</td>
+                    <td>{blog.blogDate}</td>
+                    <td>{blog.blogInfo}</td>
+                  
+                    
+                  </tr>
+                ))}
+            </tbody>
   
 </table>
 
     </div>
       </div></div>
-    </div>
+ 
   )
 }
 

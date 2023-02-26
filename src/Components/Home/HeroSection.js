@@ -1,95 +1,66 @@
-import React from 'react'
+
+import React, { useState, useEffect } from "react";
 import '../../CSS/hero.css'
 import { BsDownload } from "react-icons/bs";
+function Slider() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slides = [
+    {
+      id: 1,
+      image: 'https://ishwarishinde.github.io/cdn/digitaltransform.png',
+      title: 'Digital Transformation,Innovation & Strategy Consulting',
+      subtitle: 'Slide 1 Subtitle'
+    },
+    {
+      id: 2,
+      image: 'https://ishwarishinde.github.io/cdn/videoediting.jpg' ,
+      title: 'Great Customer Experiences Delivered',
+      subtitle: 'Slide 2 Subtitle'
+    },
+    {
+      id: 3,
+      image: 'https://ishwarishinde.github.io/cdn/innovationleader.png',
+      title: 'Innovation that Turns Brands into Leaders',
+      subtitle: 'Slide 3 Subtitle'
+    }
+  ];
 
-const HeroSection = () => {
-let index = 1;
-// show(index);
-let n=0;
-
-// function plusDivs(n) {
-//   show(index += n);
-// }
-
-function show() {
-  let i;
-  let slides = document.getElementsByClassName("slider");
-
-  for (i = 0; i < slides.length; i++) {
-
-    slides[i].style.display = "none";
-
+  const nextSlide = () => {
+    const nextIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(nextIndex);
   }
 
-  index++;
+  const prevSlide = () => {
+    const prevIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(prevIndex);
+  }
 
-  index = index > slides.length ? 1 : index ;
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 8000);
+    return () => {
+      clearInterval(intervalId);
+    }
+  }, [nextSlide]);
 
-  index=index+n;
-  slides[index-1].style.display = "flex";
-
-  setTimeout(show, 8000); 
-   
-  n=0;
-
+  return (
+    <div className='hero'>
+      <div
+        className="slider"
+        style={{
+          backgroundImage: `url(${slides[currentIndex].image})`,
+         
+        }}
+      >
+         <div className="text-overlay">
+        <h2 className='slider_heading'>{slides[currentIndex].title}</h2>
+        <p className='slider_description'>{slides[currentIndex].subtitle}</p>
+        <a href="https://ishwarishinde.github.io/cdn/MTechSoft_Profile.pdf" download><button className='slider_btn'>Download Our Profile<BsDownload id='slider_icon'/></button></a></div>
+      </div>
+    
+      <button className="prev"  onClick={prevSlide}>&#10094;</button>
+      <button  className="next" onClick={nextSlide}>&#10095;</button>
+    </div>
+  );
 }
 
-// function next(){
-//   n=1;
-// }
-
-// function prev(){
-// n=-1;
-// }
-
-// function plusSlides(n) {
-//   show(index += n);
-// }
-  return (
-    <div className='hero' >
-      <div className='slider fade' onLoad={show}>
-      <div className='slider_left '>
-      <p id='slider1_heading'>Digital Transformation,<br/>Innovation & Strategy<br/>Consulting</p>
-      <span className='slider_description' id='slider1_description'>We are a digital transformation, innovation, and strategy company that<br/> help you reimagine what is possible with new technologies.</span>
-      <a href="https://ishwarishinde.github.io/cdn/MTechSoft_Profile.pdf" download><button className='slider_btn'>Download Our Profile<BsDownload id='slider_icon'/></button></a>
-      </div>
-      <div className='slider_right '>
-        <img src="https://ishwarishinde.github.io/cdn/superman1.png" alt="heroimg" className='sliderImg animate__animated animate__lightSpeedInRight' />
-      </div> </div>
-      <div className='slider fade'>
-      <div className='slider_left'>
-      <p>Great Customer Experiences<br/>Delivered</p>
-      <span className='slider_description'>The best and the brightest minds in digital customer experience, come together<br/> for your digital future.</span>
-      <a href="https://ishwarishinde.github.io/cdn/MTechSoft_Profile.pdf" download><button className='slider_btn'>Download Our Profile<BsDownload id='slider_icon'/></button></a>
-      </div>
-      <div className='slider_right'>
-        <img src="https://ishwarishinde.github.io/cdn/superman_2.png" alt="heroimg" className='sliderImg animate__animated animate__lightSpeedInRight' />
-      </div> </div>
-      <div className='slider fade'>
-      <div className='slider_left'>
-      <p>Innovation that Turns<br/> Brands into Leaders </p>
-      <span className='slider_description'>  Powered by innovation, our technologies are powerful, scalable, and<br/> fast inching you closer to success.</span>
-      <a href="https://ishwarishinde.github.io/cdn/MTechSoft_Profile.pdf" download><button className='slider_btn'>Download Our Profile<BsDownload id='slider_icon'/></button></a>
-      </div>
-      <div className='slider_right'>
-        <img src="https://ishwarishinde.github.io/cdn/sliderimg.jpg" alt="heroimg" className='sliderImg animate__animated animate__lightSpeedInRight' />
-      </div> </div>
-
-      {/* <a  href="#" className="prev" onclick="plusDivs(-1)" >&#10094;</a> */}
-  {/* <a className="next" href='#' onclick="plusDivs(+1)" >&#10095;</a> */}
-
-   
-
-
-
-
-  
-
-
-
-
-    </div>
-  )
-  }
-
-export default HeroSection
+export default Slider

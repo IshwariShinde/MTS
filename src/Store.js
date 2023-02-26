@@ -8,6 +8,8 @@ import {combineReducers,createStore, applyMiddleware} from 'redux';
 // import { getBlogs, createBlog } from './Actions/BlogAction';
 import { blogReducer,createBlogReducer } from './Reducers/BlogReducer';
 // import { getContacts } from './actions/contactAction';
+import { createFeedbackReducer,feedbackReducer } from './Reducers/FeedbackReducer';
+import { contactReducer,createContactReducer } from './Reducers/ContactReducer';
 // import { createFeedback, getFeedbacks } from './actions/feedbackAction';
 // import { getPhotoes } from './actions/galleryAction';
 
@@ -16,14 +18,14 @@ import { blogReducer,createBlogReducer } from './Reducers/BlogReducer';
 
 const reducer = combineReducers({
     // expertises:expertiseReducer,
-    // feedback:createFeedback,
     // users:allUserReducer,
     blogs:blogReducer,
     createblog:createBlogReducer,
-    // contacts:getContacts,
-    // feedbacks:getFeedbacks,
+    contact:createContactReducer,
+    contacts:contactReducer,
+    feedbacks:feedbackReducer,
     // photoes:getPhotoes,
-    // createfeedback:createFeedback
+    feedback:createFeedbackReducer,
 });
  let initialState ={};
 

@@ -1,49 +1,77 @@
 .contactForm{
-  height: 100vh;
+
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.contact_inner{
-    background-color: #ff3738;
-   
   
-    padding: 0px 180px;
-    border-radius: 20px;
 }
-.contact_inner>h1{
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 1.20;
-    letter-spacing: 0;
-    margin-bottom: 1.5rem;
-    
+.contact_formInner{
+    padding-top: 25px;
 }
 .form_input{
-    width: 500px;
-    padding: 10px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8) !important;
+    width: 950px;
+    /* padding: 10px; */
     margin-bottom:  20px;
     float: left;
     border: none;
     outline: none;
     border-radius: 5px;
-    font-size: 20px;
-    /* background: none; */
+    font-size: 14px;
+   padding-left: 15px;
+   padding-right: 15px;
+    /* border-bottom: 2px solid #494c4d; */
+ 
+}
+.form_input:focus{
+    background-color: #313131;
 }
 #message{
     height: 100px;
     resize: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 .submit_btn{
     border: none;
+    width: 980px;
     padding: 8px 50px;
+    margin-top: 15px;
     margin-bottom: 30px;
     font-size: 20px;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
-    /* background: linear-gradient(to right, #ff3738,#fff); */
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
     
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+    
+}
+.submit_btn:hover{
+     background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(-90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(-90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(-90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../CSS/footer.css'
 import { AiOutlineTwitter,AiOutlineYoutube,AiOutlineFacebook,AiOutlineLinkedin,AiOutlineInstagram} from "react-icons/ai";
+import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
           <img src="https://ishwarishinde.github.io/cdn/logo.png" alt="logo" className="logo_resize"/>
         </div>
         <div className='company_address'>
+            <p><GrLocation /></p>
             <p>Office No. 202<br></br>
                 Trescent Park<br></br>
              Pan_Card Club Road<br></br>
@@ -40,12 +42,13 @@ const Footer = () => {
                 <h4>Our Services</h4>
             </div>
             <ul className='footer-nav-items'>
-                    <li>Universal Freelancers</li>
-                    <li>Job Tricks</li>
-                    <li>Product Management</li>
-                    <li>Career</li>
-                    <li>Marketing</li>
-                    <li>Graphic Design</li>
+                    <li>Custom Software</li>
+                    <li>Web Development</li>
+                    <li>Business Intelligence</li>
+                    <li>Content Auditing</li>
+                    <li>Digital Marketing</li>
+                    <li>Video Editing</li>
+                    <li>Data Annotation</li>
                 </ul>
             </div>
             <div className='newsletter'>

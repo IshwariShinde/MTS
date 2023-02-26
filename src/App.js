@@ -15,13 +15,6 @@ import WhyJoinUs from './Components/About/WhyJoinUs'
 import Team from './Components/About/Team'
 import MtiansExperience from './Components/Contact/MtiansExperience'
 import GetWorkDone from './Components/Home/GetWorkDone'
-import Blog1 from './Components/Blogs/Blog1'
-import Blog2 from './Components/Blogs/Blog2'
-import Blog3 from './Components/Blogs/Blog3'
-import Blog4 from './Components/Blogs/Blog4'
-import Blog5 from './Components/Blogs/Blog5'
-import Blog6 from './Components/Blogs/Blog6'
-import Blog7 from './Components/Blogs/Blog7'
 import CustomSoftware from './Components/Services/CustomSoftware'
 import WebDevelopment from './Components/Services/WebDevelopment'
 import Aos from 'aos';
@@ -30,13 +23,15 @@ import DigitalMarketing from './Components/Services/DigitalMarketing'
 import VideoEditing from './Components/Services/VideoEditing'
 import BusinessIntelligence from './Components/Services/BusinessIntelligence'
 import Admin from './Components/Admin'
-import Adminblog from './Components/Admin/Adminblog'
 import AdminPhotos from './Components/Admin/AdminPhotos'
 import Bloglist from './Components/Admin/Bloglist'
 import AddBlog from './Components/Admin/AddBlog'
 import DataAnnotation from './Components/Services/DataAnnotation'
 import ContentAuditing from './Components/Services/ContentAuditing'
 import BlogDescription from './Components/Contact/BlogDescription'
+import AdminFeedback from './Components/Admin/AdminFeedback'
+import AdminContact from './Components/Admin/AminContact'
+import LoginAdmin from './Components/Admin/LoginAdmin'
 
 const App = () => {
   useEffect(()=>{
@@ -47,12 +42,11 @@ const App = () => {
       <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='/admin' element={<Admin/>} />
-        <Route path='/adminblogs' element={<Adminblog/>} />
+      <Route path='/admin' element={<Bloglist/>} />
         <Route path='/adminphotos' element={<AdminPhotos/>} />
-        <Route path='/allbloglist' element={<Bloglist/>} />
-        <Route path='/addblog' element={<AddBlog
-        />} />
+        <Route path='/adminfeedback' element={<AdminFeedback/>} />
+        <Route path='/addblog' element={<AddBlog/>}/>
+        <Route path='/admincontact' element={<AdminContact/>}/>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/whoweare' element={<About/>} />
@@ -78,18 +72,11 @@ const App = () => {
         <Route path='/feedback' element={ <Feedback/>}/>
         <Route path='/workexperience' element={ <MtiansExperience/>}/>
         <Route path='/getyourworkdone' element={  <GetWorkDone/>} />
-        <Route path='/blog1description' element={ <Blog1/>} />
-        <Route path='/blog2description' element={ <Blog2/>} />
-        <Route path='/blog3description' element={ <Blog3/>} />
-        <Route path='/blog4description' element={ <Blog4/>} />
-        <Route path='/blog5description' element={ <Blog5/>} />
-        <Route path='/blog6description' element={ <Blog6/>} />
-        <Route path='/blog7description' element={ <Blog7/>} />
         <Route path='/blogdescription' element={ <BlogDescription/>} />
         {/* <Route path='/workexperience' element={ <Blog7/>} /> */}
        
       
-        
+        <Route path='/login' element={<LoginAdmin/>} />
        
         
        
