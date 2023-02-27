@@ -1,7 +1,11 @@
+.htop{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
 .header{
-  position: sticky;
-  z-index: 2;
-  top: 0;
+
+
   background-color: #fff;
     display: flex;
     justify-content: space-between;

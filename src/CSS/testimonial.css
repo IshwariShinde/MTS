@@ -1,0 +1,56 @@
+.testimonial{
+    background-color: black;
+    color: white;
+    height: 400px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 85px; */
+}
+.test_slider{
+    position: relative;
+    width: 700px;
+    text-align: center;
+ 
+    
+    /* background-color: antiquewhite; */
+}
+.Cimage{
+    height: 100px;
+    
+ display: flex;
+ justify-content: center;
+    /* border-radius: 50%; */
+    /* margin-left: 260px; */
+    /* background-color: #f2f2f2; */
+}
+.cimage_inner{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+.testi_prev, .testi_next{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+  
+    /* margin-top: -22px; */
+    padding: 16px;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: none;
+    border: none;
+}
+.testi_prev{
+    left: -25%;
+}
+.testi_next{
+    right: -25%;
+}

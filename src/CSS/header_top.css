@@ -1,0 +1,39 @@
+.HeaderTop{
+    height: 45px;
+    /* width: 100vw; */
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+}
+.h_mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #111; */
+
+    font-size: 16px;
+}
+.h_mail_info{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.h_mailIcon{
+    /* margin-top: 8px; */
+    margin-right: 5px;
+}
+.h_social_icon{
+    color: #fff;
+    margin-right: 8px;
+    font-size: 18px;
+}

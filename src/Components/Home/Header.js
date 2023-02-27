@@ -1,10 +1,14 @@
 import React from 'react'
 import '../../CSS/header.css'
 import { NavLink } from 'react-router-dom';
+import HeaderTop from './HeaderTop';
 
 const Header = () => {
   return (
+    < div className='htop'>
+    <HeaderTop/>
     <div className='header'>
+  
       <div className='logo'>
         <img src="https://ishwarishinde.github.io/cdn/logo.png" alt="logo" className="logo_resize" />
       </div>
@@ -27,6 +31,7 @@ const Header = () => {
 
           <li><NavLink to={'/services'} className="linkStyle">SERVICES</NavLink></li>
           <div className='service_dropdown_content'>
+         
           <li><NavLink to={'/customsoftware'} className="linkStyle" >Custom Software</NavLink></li>
           <li><NavLink to={'/webdevelopment'} className="linkStyle" >Web Development</NavLink></li>
           <li><NavLink to={'/businessintelligence'} className="linkStyle" >Business Intelligence</NavLink></li>
@@ -34,6 +39,7 @@ const Header = () => {
           <li><NavLink to={'/dataannotation'} className="linkStyle" >Data Annotation Services</NavLink></li>
           <li><NavLink to={'/contentauditing'} className="linkStyle" >Content Auditing Services</NavLink></li>
           <li><NavLink to={'/digitalmarketing'} className="linkStyle" >Digital Marketing</NavLink></li>
+          
           </div>
           </div>
           <li><NavLink to={'/industries'} className="linkStyle">INDUSTRIES</NavLink></li>
@@ -60,9 +66,10 @@ const Header = () => {
         </ul>
       </div>
       <div className='connect_btn'>
+       
        <NavLink to="/getyourworkdone" ><button className='connect_btn_style'>Get Your Work Done</button></NavLink>
       </div>
-    </div>
+    </div></div>
   )
 }
 
