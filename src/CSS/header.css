@@ -33,7 +33,15 @@
 .connect_btn_style{
     cursor: pointer;
     padding: 6px 12px;
-    background-color: #EB5757;
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
    border: none;
    color: #fff;
    font-size: 16px;
