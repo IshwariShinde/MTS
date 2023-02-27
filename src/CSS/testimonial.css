@@ -1,6 +1,6 @@
 .testimonial{
-    background-color: black;
-    color: white;
+    background-color: rgb(155, 141, 141);
+    color: black;
     height: 400px;
     /* text-align: center; */
     display: flex;
@@ -39,18 +39,36 @@
   
     /* margin-top: -22px; */
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: normal;
     font-size: 25px;
-    transition: 0.6s ease;
+    transition: all 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: none;
     border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 .testi_prev{
     left: -25%;
 }
 .testi_next{
     right: -25%;
+}
+.testi_next:hover,.testi_prev:hover{
+    background: hsla(350, 93%, 61%, 1);
+
+    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+    color: #fff;
 }

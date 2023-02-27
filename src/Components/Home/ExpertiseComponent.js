@@ -5,8 +5,8 @@ import '../../CSS/expertiseComponent.css'
 const ExpertiseComponent = ({expertiseImg, expertiseTitle,expertiseInfo,expertiseHeading}) => {
   return (
     <div className='expertiseComponent'>
-        <div className='container'>
-        <div className='card' >
+        <div className='expertise_container'>
+        <div className='expertise_card' >
       <div className='expertise_image' >
         <img  src={expertiseImg} alt="expertiseImg" className='expertise_image_inner'/>
       </div>

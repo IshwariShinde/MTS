@@ -1,4 +1,4 @@
-.container{
+.expertise_container{
   position: relative;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin: 100px 15px;
   /* background-color: aqua; */
 }
-.card{
+.expertise_card{
   position: relative;
   width : 300px;
   height : 215px;  
@@ -21,10 +21,10 @@
   transition : 0.3s ease-in-out;
   border-radius : 15px;
 }
-.card:hover{
+.expertise_card:hover{
   height:350px ;
 }
-.card:hover > .expertise_content{
+.expertise_card:hover > .expertise_content{
   visibility: visible;
 }
 .expertise_image{
@@ -69,7 +69,7 @@
   letter-spacing: 1px;
   /* visibility: hidden; */
 }
-.card:hover > .expertise_mainheading{
+.expertise_card:hover > .expertise_mainheading{
   display: none;
 }
 .expertise_content > p{

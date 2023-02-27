@@ -15,7 +15,7 @@ const BuildCareer = () => {
             {/* <h6 style={{color:"grey"}}>Have a look at what our M-Tians have to say</h6> */}
           
          
-           <NavLink to='/workexperience'><button class="button-48" role="button"><span class="text">Explore</span></button></NavLink>
+           <NavLink to='/workexperience'><button class="button-48" ><span class="text">Explore</span></button></NavLink>
 
 
 
